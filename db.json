@@ -1,19 +1,18 @@
 {
   "data": {
     "profiles": {
-      "user1":{
+      "user1": {
         "user_id": "user1",
         "user_name": "Suresh",
         "user_mail": "suresh@gmail.com"
       },
-
-      "user2":{
+      "user2": {
         "user_id": "user2",
         "user_name": "sakthivel",
         "user_mail": "sakthivel@gmail.com"
       }
     },
-    "resorts":{
+    "resorts": {
       "r1": {
         "id": "r1",
         "name": "Coorg Resort 1",
@@ -378,7 +377,7 @@
         "type": "Adventure Activity",
         "capacity": 20,
         "price": 800,
-        "rating": 4.0,
+        "rating": 4,
         "main_image": "https://loremflickr.com/1200/700/cycling,adventure?lock=20000",
         "images": [
           "https://loremflickr.com/1200/700/cycling,adventure?lock=20001",
@@ -750,5 +749,26 @@
         ]
       }
     }
-  }
+  },
+  "bookings": [
+    {
+      "resortId": "r1",
+      "resortName": "Coorg Resort 1",
+      "checkIn": "2026-06-30",
+      "checkOut": "2026-07-02",
+      "guests": 1,
+      "price": 3750,
+      "id": "ONWOgKK1Rf8"
+    },
+    {
+      "resortId": "r6",
+      "resortName": "Kerala Resort 6",
+      "checkIn": "2026-07-11",
+      "checkOut": "2026-06-30",
+      "guests": "4",
+      "price": 7500,
+      "id": "Rf_BUWI_y1I"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
