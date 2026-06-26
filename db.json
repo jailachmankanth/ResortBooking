@@ -639,13 +639,13 @@
         "resort": [
           {
             "id": 355,
-            "resort_id": 1,
+            "resort_id": "r1",
             "check_in": "15-06-2026",
             "check_out": "18-06-2026"
           },
           {
             "id": 354,
-            "resort_id": 4,
+            "resort_id": "r4",
             "check_in": "16-06-2026",
             "check_out": "20-06-2026"
           }
@@ -653,12 +653,12 @@
         "activities": [
           {
             "id": 456,
-            "activities_id": 1,
+            "activities_id": "a1",
             "date": "14-06-2026"
           },
           {
             "id": 457,
-            "activities_id": 4,
+            "activities_id": "a4",
             "date": "16-06-2026"
           }
         ]
@@ -667,13 +667,13 @@
         "resort": [
           {
             "id": 355,
-            "resort_id": 1,
+            "resort_id": "r1",
             "check_in": "15-06-2026",
             "check_out": "18-06-2026"
           },
           {
             "id": 354,
-            "resort_id": 4,
+            "resort_id": "r4",
             "check_in": "16-06-2026",
             "check_out": "20-06-2026"
           }
@@ -681,12 +681,12 @@
         "activities": [
           {
             "id": 456,
-            "activities_id": 1,
+            "activities_id": "a1",
             "date": "14-06-2026"
           },
           {
             "id": 457,
-            "activities_id": 4,
+            "activities_id": "a4",
             "date": "16-06-2026"
           }
         ]
@@ -697,13 +697,13 @@
         "resort": [
           {
             "id": 355,
-            "resort_id": 1,
+            "resort_id": "r1",
             "check_in": "15-06-2026",
             "check_out": "18-06-2026"
           },
           {
             "id": 354,
-            "resort_id": 4,
+            "resort_id": "r4",
             "check_in": "16-06-2026",
             "check_out": "20-06-2026"
           }
@@ -711,12 +711,12 @@
         "activities": [
           {
             "id": 456,
-            "activities_id": 1,
+            "activities_id": "a1",
             "date": "14-06-2026"
           },
           {
             "id": 457,
-            "activities_id": 4,
+            "activities_id": "a4",
             "date": "16-06-2026"
           }
         ]
@@ -725,13 +725,13 @@
         "resort": [
           {
             "id": 355,
-            "resort_id": 1,
+            "resort_id": "r1",
             "check_in": "15-06-2026",
             "check_out": "18-06-2026"
           },
           {
             "id": 354,
-            "resort_id": 4,
+            "resort_id": "r4",
             "check_in": "16-06-2026",
             "check_out": "20-06-2026"
           }
@@ -739,12 +739,12 @@
         "activities": [
           {
             "id": 456,
-            "activities_id": 1,
+            "activities_id": "a1",
             "date": "14-06-2026"
           },
           {
             "id": 457,
-            "activities_id": 4,
+            "activities_id": "a4",
             "date": "16-06-2026"
           }
         ]
