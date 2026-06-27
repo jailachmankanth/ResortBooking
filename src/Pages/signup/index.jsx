@@ -50,11 +50,10 @@ function index() {
                 <div className="overlay"></div>
                 
                 <div className="banner-content">
-                    <h1>Aura Resorts</h1>
+                    <h1>The Grandoria Collections</h1>
 
                     <p>
-                        Create your account and start exploring luxury
-                        resorts, exciting activities, and unforgettable stays.
+                        “A world of grandeur, luxury, and exceptional experiences.”
                     </p>
                 </div>
             </div>

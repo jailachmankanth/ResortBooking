@@ -634,7 +634,7 @@
   ],
   "carts": [
     {
-      "id": 353,
+      "id": "353",
       "user_id": "R_2pI_kgRDQ",
       "resort_id": "r1",
       "check_in": "15-06-2026",
@@ -642,7 +642,7 @@
       "guests": 1
     },
     {
-      "id": 354,
+      "id": "354",
       "user_id": "eexL3m5k37o",
       "resort_id": "r4",
       "check_in": "16-06-2026",
@@ -650,7 +650,7 @@
       "guests": 1
     },
     {
-      "id": 355,
+      "id": "355",
       "resort_id": "r7",
       "user_id": "R_2pI_kgRDQ",
       "check_in": "20-07-2026",
@@ -658,7 +658,7 @@
       "guests": 1
     },
     {
-      "id": 356,
+      "id": "356",
       "resort_id": "r3",
       "user_id": "eexL3m5k37o",
       "check_in": "25-07-2026",
@@ -666,28 +666,28 @@
       "guests": 1
     },
     {
-      "id": 357,
+      "id": "357",
       "user_id": "R_2pI_kgRDQ",
       "activities_id": "a1",
       "date": "18-06-2026",
       "guests": 1
     },
     {
-      "id": 358,
+      "id": "358",
       "user_id": "eexL3m5k37o",
       "activities_id": "a4",
       "date": "16-06-2026",
       "guests": 1
     },
     {
-      "id": 359,
+      "id": "359",
       "activities_id": "a7",
       "user_id": "R_2pI_kgRDQ",
       "date": "20-07-2026",
       "guests": 1
     },
     {
-      "id": 360,
+      "id": "360",
       "activities_id": "a3",
       "user_id": "eexL3m5k37o",
       "date": "25-07-2026",
@@ -696,7 +696,7 @@
   ],
   "bookings": [
     {
-      "id": 353,
+      "id": "353",
       "user_id": "R_2pI_kgRDQ",
       "resort_id": "r1",
       "check_in": "15-06-2026",
@@ -704,7 +704,7 @@
       "guests": 1
     },
     {
-      "id": 354,
+      "id": "354",
       "user_id": "eexL3m5k37o",
       "resort_id": "r4",
       "check_in": "16-06-2026",
@@ -712,7 +712,7 @@
       "guests": 1
     },
     {
-      "id": 355,
+      "id": "355",
       "resort_id": "r7",
       "user_id": "R_2pI_kgRDQ",
       "check_in": "20-07-2026",
@@ -720,7 +720,7 @@
       "guests": 1
     },
     {
-      "id": 356,
+      "id": "356",
       "resort_id": "r3",
       "user_id": "eexL3m5k37o",
       "check_in": "25-07-2026",
@@ -728,32 +728,33 @@
       "guests": 1
     },
     {
-      "id": 357,
+      "id": "357",
       "user_id": "R_2pI_kgRDQ",
       "activities_id": "a1",
       "date": "18-06-2026",
       "guests": 1
     },
     {
-      "id": 358,
+      "id": "358",
       "user_id": "eexL3m5k37o",
       "activities_id": "a4",
       "date": "16-06-2026",
       "guests": 1
     },
     {
-      "id": 359,
+      "id": "359",
       "activities_id": "a7",
       "user_id": "R_2pI_kgRDQ",
       "date": "20-07-2026",
       "guests": 1
     },
     {
-      "id": 360,
+      "id": "360",
       "activities_id": "a3",
       "user_id": "eexL3m5k37o",
       "date": "25-07-2026",
       "guests": 1
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
