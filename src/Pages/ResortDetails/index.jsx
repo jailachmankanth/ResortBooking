@@ -1,20 +1,23 @@
 import "./index.scss";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 const ResortDetails = () => {
   const [resorts, setResorts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
-  const [guests, setGuests] = useState(1);
+  const [guests, setGuests] = useState()
+  const [userId, setUserId] = useState("")
+  const {id} = useParams()
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/data")
+      .get(`http://localhost:3000/resorts?id=${id}`)
       .then((response) => {
         
-        const resortsArray =Object.values(response.data.resorts);
+        const resortsArray =Object.values(response.data);
 
         setResorts(resortsArray);
         setLoading(false);
@@ -23,6 +26,8 @@ const ResortDetails = () => {
         console.error(error);
         setLoading(false);
       });
+      setUserId(localStorage.getItem("user_id"))
+      
   }, []);
 
   const handleBooking = (resort) => {
@@ -31,18 +36,17 @@ const ResortDetails = () => {
       return;
     }
 
-  const bookingData = {
-    resortId: resort.id,
-    resortName: resort.name,
-    checkIn,
-    checkOut,
-    guests,
-    price: resort.price
+  const cartData = {
+    user_id: userId,
+    resort_id: resort.id,
+    check_in: checkIn,
+    check_out: checkOut,
+    guests: guests,
   };
 
-  axios.post("http://localhost:3001/bookings", bookingData)
+  axios.post("http://localhost:3000/carts", cartData)
     .then(() => {
-      alert("Booking Successful!");
+      alert("Cart added successfully");
           setCheckIn("");
           setCheckOut("");
           setGuests(1);

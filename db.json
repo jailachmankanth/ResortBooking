@@ -14,181 +14,204 @@
   "resorts": [
     {
       "id": "r1",
-      "name": "Coorg Resort 1",
+      "name": "Taj Madikeri Resort & Spa",
       "location": "Coorg",
       "type": "Family Suite",
       "capacity": 3,
       "price": 3750,
       "rating": 4.2,
-      "main_image": "https://loremflickr.com/1200/700/Coorg,resort,family?lock=1000",
+      "reviews": 1240,
+      "tags": ["spa", "infinity pool", "nature walk"],
+      "main_image": "https://cdn.sanity.io/images/ocl5w36p/ihcl_prod/138c964c174829cb4e397fc6da1212011a865ba2-3841x1861.jpg?w=480&auto=format&dpr=2",
       "images": [
-        "https://loremflickr.com/1200/700/Coorg,resort,family?lock=1001",
-        "https://loremflickr.com/1200/700/Coorg,resort,family?lock=1002"
+        "https://d1p55htxo8z8mf.cloudfront.net/4226016e-b526-49d7-9411-319e283f7519.jpg?format=webp&width=800",
+        "https://pix10.agoda.net/hotelImages/34300065/0/d72a22e4e11e9f9943c5a520197831dc.jpeg?ce=3&s=414x232"
       ],
       "description": "This premium resort in Coorg offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r2",
-      "name": "Ooty Resort 2",
+      "name": "Savoy - IHCL SeleQtions",
       "location": "Ooty",
       "type": "Luxury Villa",
       "capacity": 4,
       "price": 4500,
       "rating": 4.3,
-      "main_image": "https://loremflickr.com/1200/700/Ooty,resort,luxury?lock=2000",
+      "reviews": 850,
+      "tags": ["camp fire", "heritage", "garden area"],
+      "main_image": "https://cdn.sanity.io/images/ocl5w36p/ihcl_prod/9869ec13a7126e683d725dec695519b12001777b-1280x1570.jpg?w=380&fit=max&auto=format&dpr=2",
       "images": [
-        "https://loremflickr.com/1200/700/Ooty,resort,luxury?lock=2001",
-        "https://loremflickr.com/1200/700/Ooty,resort,luxury?lock=2002"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEM-CxfJpHtwUsZkcVIrci6rDUNDhhjobbfs0-6F20F_rDpQafN3aACl4&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cNnkImKs19nweapCPX0ht0cWjuaUqkAhkzulr4kYQ-P_eHYmI1FbES6S&s=10"
       ],
       "description": "This premium resort in Ooty offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r3",
-      "name": "Wayanad Resort 3",
+      "name": "Vythiri Village Resort",
       "location": "Wayanad",
       "type": "Premium Suite",
       "capacity": 5,
       "price": 5250,
       "rating": 4.4,
-      "main_image": "https://loremflickr.com/1200/700/Wayanad,resort,premium?lock=3000",
+      "reviews": 2100,
+      "tags": ["wave pool", "zipline", "ayurveda spa"],
+      "main_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/25/5d/76/vythiri-village.jpg?w=900&h=500&s=1",
       "images": [
-        "https://loremflickr.com/1200/700/Wayanad,resort,premium?lock=3001",
-        "https://loremflickr.com/1200/700/Wayanad,resort,premium?lock=3002"
+        "https://gos3.ibcdn.com/fd16de946e3f11e78c5b0a4cef95d023.jpg",
+        "https://q-xx.bstatic.com/xdata/images/hotel/max500/183270123.jpg?k=74bfbc9a4f9cdd039c4b72e4d72322b0ceb17be7d60b88276e6fa8147ad05459&o="
       ],
       "description": "This premium resort in Wayanad offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r4",
-      "name": "Goa Resort 4",
+      "name": "Taj Fort Aguada Resort & Spa",
       "location": "Goa",
       "type": "Deluxe Room",
       "capacity": 6,
       "price": 6000,
       "rating": 4.5,
-      "main_image": "https://loremflickr.com/1200/700/Goa,resort,deluxe?lock=4000",
+      "reviews": 3450,
+      "tags": ["beachfront", "party area", "water sports"],
+      "main_image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/753970832.jpg?k=5a4f54617182dc84b9ebb71e2c6130e466cd1fd864ef2a0e2ff3e2790d216c82&o=",
       "images": [
-        "https://loremflickr.com/1200/700/Goa,resort,deluxe?lock=4001",
-        "https://loremflickr.com/1200/700/Goa,resort,deluxe?lock=4002"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6__vIvR8z1c2FDoSXRWjCzSfZG0U1t7tZ5Igo2TRf5bQsCdb_I-xjnqu&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqWWdXbKUFCgQBOYNKedxoEW-D3D77xL8uQCuneVZoIyS8anwM46IZtg1&s=10"
       ],
       "description": "This premium resort in Goa offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r5",
-      "name": "Mysore Resort 5",
+      "name": "Silent Shores Resort & Spa",
       "location": "Mysore",
       "type": "Family Suite",
       "capacity": 7,
       "price": 6750,
       "rating": 4.6,
-      "main_image": "https://loremflickr.com/1200/700/Mysore,resort,family?lock=5000",
+      "reviews": 980,
+      "tags": ["lounge", "swimming pool", "multi-cuisine restaurant"],
+      "main_image": "https://silentshoresresort.com/wp-content/uploads/2019/03/Silent-Shores-Superior-Rooms-Gallery1.jpg",
       "images": [
-        "https://loremflickr.com/1200/700/Mysore,resort,family?lock=5001",
-        "https://loremflickr.com/1200/700/Mysore,resort,family?lock=5002"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHsOs_Bj962tiiDUV0_3ogpwQYwdypMGVdAGwd9RbhEgRot_TQpu6u01Wg&s=10",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/321622604.jpg?k=a10458251cbcce11174c462ab9ab4c20907edf4d585ac9bd63b2bd3b13a002a7&o="
       ],
       "description": "This premium resort in Mysore offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r6",
-      "name": "Kerala Resort 6",
+      "name": "Kumarakom Lake Resort",
       "location": "Kerala",
       "type": "Luxury Villa",
       "capacity": 2,
       "price": 7500,
       "rating": 4.7,
-      "main_image": "https://loremflickr.com/1200/700/Kerala,resort,luxury?lock=6000",
+      "reviews": 1620,
+      "tags": ["backwaters", "houseboat", "infinity pool"],
+      "main_image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/15267976.jpg?k=ccbd56d126e190805d37c39da38a87bf5cce7d758bbf49063d57e18a38adcc73&o=",
       "images": [
-        "https://loremflickr.com/1200/700/Kerala,resort,luxury?lock=6001",
-        "https://loremflickr.com/1200/700/Kerala,resort,luxury?lock=6002"
+        "https://www.kumarakomlakeresort.in/assets/images/luxury-dining/vembanad-the-seafood-bar/vembanad-the-seafood-bar.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/16/97/92/c2/kumarakom-lake-resort.jpg"
       ],
       "description": "This premium resort in Kerala offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r7",
-      "name": "Chikmagalur Resort 7",
+      "name": "The Serai",
       "location": "Chikmagalur",
       "type": "Premium Suite",
       "capacity": 3,
       "price": 8250,
       "rating": 4.8,
-      "main_image": "https://loremflickr.com/1200/700/Chikmagalur,resort,premium?lock=7000",
+      "reviews": 1150,
+      "tags": ["coffee plantation", "private pool", "cycling"],
+      "main_image": "https://assets.simplotel.com/simplotel/image/upload/x_52,y_0,w_666,h_500,r_0,c_crop,q_90,fl_progressive/w_500,f_auto,c_fit/the-serai-chikmagalur/the-residence-facade",
       "images": [
-        "https://loremflickr.com/1200/700/Chikmagalur,resort,premium?lock=7001",
-        "https://loremflickr.com/1200/700/Chikmagalur,resort,premium?lock=7002"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWGURhs2yj9N-vGbBGvY1DzoDPF8abX3aFHwHGN06IhDEuRZswpqLBRQ&s=10",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/21/06/0d/royal-tented-suite.jpg?w=900&h=500&s=1"
       ],
       "description": "This premium resort in Chikmagalur offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r8",
-      "name": "Munnar Resort 8",
+      "name": "The Panoramic Getaway",
       "location": "Munnar",
       "type": "Deluxe Room",
       "capacity": 4,
       "price": 9000,
       "rating": 4.9,
-      "main_image": "https://loremflickr.com/1200/700/Munnar,resort,deluxe?lock=8000",
+      "reviews": 1890,
+      "tags": ["rooftop pool", "helipad", "valley view"],
+      "main_image": "https://media-cdn.tripadvisor.com/media/photo-i/0e/a4/44/e2/the-panoramic-getaway.jpg",
       "images": [
-        "https://loremflickr.com/1200/700/Munnar,resort,deluxe?lock=8001",
-        "https://loremflickr.com/1200/700/Munnar,resort,deluxe?lock=8002"
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/d5/86/9d/renovated-adults-heated.jpg?w=900&h=500&s=1",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4VJtP_jkGsWseASe6Q9Jt4Q2BlPSSauxlJKHQejfOHQ&s"
       ],
       "description": "This premium resort in Munnar offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r9",
-      "name": "Kodaikanal Resort 9",
+      "name": "The Carlton",
       "location": "Kodaikanal",
       "type": "Family Suite",
       "capacity": 5,
       "price": 9750,
       "rating": 4.1,
-      "main_image": "https://loremflickr.com/1200/700/Kodaikanal,resort,family?lock=9000",
+      "reviews": 730,
+      "tags": ["lake view", "boating", "camp fire"],
+      "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqevlKnjw1VkyFS8InfrLUj7zx8EY2t9bSfHVaB_5UsYGGeV5oXbuOFCQ&s=10",
       "images": [
-        "https://loremflickr.com/1200/700/Kodaikanal,resort,family?lock=9001",
-        "https://loremflickr.com/1200/700/Kodaikanal,resort,family?lock=9002"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPDwas8B9AGIFsZ3_Td7FzhXrqVoYu8qbCq_36RbtrrhTR64IgvD2HWw&s=10"
       ],
       "description": "This premium resort in Kodaikanal offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r10",
-      "name": "Pondicherry Resort 10",
+      "name": "Le Pondy",
       "location": "Pondicherry",
       "type": "Luxury Villa",
       "capacity": 6,
       "price": 10500,
       "rating": 4.2,
-      "main_image": "https://loremflickr.com/1200/700/Pondicherry,resort,luxury?lock=10000",
+      "reviews": 1420,
+      "tags": ["private beach", "french architecture", "party area"],
+      "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_NPz4bAGdW6NwxYDX4CJMfWdh_UsHlqSkdfqd_BpmX2mYrO2nykJ59ARb&s=10",
       "images": [
-        "https://loremflickr.com/1200/700/Pondicherry,resort,luxury?lock=10001",
-        "https://loremflickr.com/1200/700/Pondicherry,resort,luxury?lock=10002"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS746L51nPAXZlgdk6AtT_PqyilXdl1H5TZADmy_DopBrV9R3jWg8mja72m&s=10",
+        "https://img.easemytrip.com/roomimages/EMTHotel-525246/8/37270724/372707_2.jpg"
       ],
       "description": "This premium resort in Pondicherry offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r11",
-      "name": "Jaipur Resort 11",
+      "name": "Rambagh Palace",
       "location": "Jaipur",
       "type": "Premium Suite",
       "capacity": 7,
       "price": 11250,
       "rating": 4.3,
-      "main_image": "https://loremflickr.com/1200/700/Jaipur,resort,premium?lock=11000",
+      "reviews": 2200,
+      "tags": ["royal heritage", "polo bar", "peacock garden"],
+      "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfe9CHX-Xi1ASI6oYLLwnmE_B5Aq4ZWMeh1NNuq0OPgQXgi1LhwUxBWitM&s=10",
       "images": [
-        "https://loremflickr.com/1200/700/Jaipur,resort,premium?lock=11001",
-        "https://loremflickr.com/1200/700/Jaipur,resort,premium?lock=11002"
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/407617043.jpg?k=4b4f195bab585ff06a9c5d9f5feae6bc6227f83b9129a3bfc33320d960e4629a&o=",
+        "https://images.trvl-media.com/lodging/1000000/530000/526400/526331/9f98c9fd.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill"
       ],
       "description": "This premium resort in Jaipur offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     },
     {
       "id": "r12",
-      "name": "Manali Resort 12",
+      "name": "The Himalayan",
       "location": "Manali",
       "type": "Deluxe Room",
       "capacity": 2,
       "price": 12000,
       "rating": 4.4,
-      "main_image": "https://loremflickr.com/1200/700/Manali,resort,deluxe?lock=12000",
+      "reviews": 960,
+      "tags": ["castle architecture", "mountain view", "fire place"],
+      "main_image": "https://gos3.ibcdn.com/a4e73d0cbd1111eb81290242ac110002.jpg",
       "images": [
-        "https://loremflickr.com/1200/700/Manali,resort,deluxe?lock=12001",
-        "https://loremflickr.com/1200/700/Manali,resort,deluxe?lock=12002"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKL7-0UTPehPQCIHZDCt9JGo9NQQe3nXJ-L53sBi-z17_ohP2FA2pwy0ZR&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8ap6HOpTeFVEmaJrvVQ_NtW1Yk-6-tE3tmCLECGY2ecyYj1tLomiYyyE&s=10"
       ],
       "description": "This premium resort in Manali offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
     }
@@ -632,7 +655,7 @@
       "description": "This multi-purpose hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
     }
   ],
-  "carts": [
+  "resort_carts": [
     {
       "id": "353",
       "user_id": "R_2pI_kgRDQ",
@@ -664,7 +687,9 @@
       "check_in": "25-07-2026",
       "check_out": "28-07-2026",
       "guests": 1
-    },
+    }
+  ],
+  "activities_carts": [
     {
       "id": "357",
       "user_id": "R_2pI_kgRDQ",
@@ -692,9 +717,33 @@
       "user_id": "eexL3m5k37o",
       "date": "25-07-2026",
       "guests": 1
+    },
+    {
+      "user_id": "R_2pI_kgRDQ",
+      "resort_id": "r2",
+      "check_in": "2026-06-28",
+      "check_out": "2026-06-29",
+      "guests": "3",
+      "id": "HajuH8xpngE"
+    },
+    {
+      "user_id": "R_2pI_kgRDQ",
+      "resort_id": "r2",
+      "check_in": "2026-07-01",
+      "check_out": "2026-07-04",
+      "guests": "3",
+      "id": "ll9Is9hzSpY"
+    },
+    {
+      "user_id": "R_2pI_kgRDQ",
+      "resort_id": "r2",
+      "check_in": "2026-06-25",
+      "check_out": "2026-06-30",
+      "guests": "3",
+      "id": "0SgEIKXOAZc"
     }
   ],
-  "bookings": [
+  "resort_bookings":[
     {
       "id": "353",
       "user_id": "R_2pI_kgRDQ",
@@ -726,7 +775,9 @@
       "check_in": "25-07-2026",
       "check_out": "28-07-2026",
       "guests": 1
-    },
+    }
+  ],
+  "activities_booking": [
     {
       "id": "357",
       "user_id": "R_2pI_kgRDQ",
