@@ -11,16 +11,34 @@
 
 // export default App
 
-import React from 'react';
-import ResortDetails from './Pages/ResortDetails';
+// import React from 'react';
+// import ResortDetails from './Pages/ResortDetails';
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <ResortDetails/>
+    
+//     </div>
+//   );
+// }
+
+// export default App;
+import React from 'react'
+import Contact from './Pages/Contact';
 
 const App = () => {
   return (
     <div>
-      <ResortDetails/>
+      <Contact/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
+
+
+
 
