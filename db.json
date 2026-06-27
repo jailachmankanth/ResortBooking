@@ -1,774 +1,759 @@
 {
-  "data": {
-    "profiles": {
-      "user1": {
-        "user_id": "user1",
-        "user_name": "Suresh",
-        "user_mail": "suresh@gmail.com"
-      },
-      "user2": {
-        "user_id": "user2",
-        "user_name": "sakthivel",
-        "user_mail": "sakthivel@gmail.com"
-      }
-    },
-    "resorts": {
-      "r1": {
-        "id": "r1",
-        "name": "Coorg Resort 1",
-        "location": "Coorg",
-        "type": "Family Suite",
-        "capacity": 3,
-        "price": 3750,
-        "rating": 4.2,
-        "main_image": "https://loremflickr.com/1200/700/Coorg,resort,family?lock=1000",
-        "images": [
-          "https://loremflickr.com/1200/700/Coorg,resort,family?lock=1001",
-          "https://loremflickr.com/1200/700/Coorg,resort,family?lock=1002"
-        ],
-        "description": "This premium resort in Coorg offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r2": {
-        "id": "r2",
-        "name": "Ooty Resort 2",
-        "location": "Ooty",
-        "type": "Luxury Villa",
-        "capacity": 4,
-        "price": 4500,
-        "rating": 4.3,
-        "main_image": "https://loremflickr.com/1200/700/Ooty,resort,luxury?lock=2000",
-        "images": [
-          "https://loremflickr.com/1200/700/Ooty,resort,luxury?lock=2001",
-          "https://loremflickr.com/1200/700/Ooty,resort,luxury?lock=2002"
-        ],
-        "description": "This premium resort in Ooty offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r3": {
-        "id": "r3",
-        "name": "Wayanad Resort 3",
-        "location": "Wayanad",
-        "type": "Premium Suite",
-        "capacity": 5,
-        "price": 5250,
-        "rating": 4.4,
-        "main_image": "https://loremflickr.com/1200/700/Wayanad,resort,premium?lock=3000",
-        "images": [
-          "https://loremflickr.com/1200/700/Wayanad,resort,premium?lock=3001",
-          "https://loremflickr.com/1200/700/Wayanad,resort,premium?lock=3002"
-        ],
-        "description": "This premium resort in Wayanad offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r4": {
-        "id": "r4",
-        "name": "Goa Resort 4",
-        "location": "Goa",
-        "type": "Deluxe Room",
-        "capacity": 6,
-        "price": 6000,
-        "rating": 4.5,
-        "main_image": "https://loremflickr.com/1200/700/Goa,resort,deluxe?lock=4000",
-        "images": [
-          "https://loremflickr.com/1200/700/Goa,resort,deluxe?lock=4001",
-          "https://loremflickr.com/1200/700/Goa,resort,deluxe?lock=4002"
-        ],
-        "description": "This premium resort in Goa offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r5": {
-        "id": "r5",
-        "name": "Mysore Resort 5",
-        "location": "Mysore",
-        "type": "Family Suite",
-        "capacity": 7,
-        "price": 6750,
-        "rating": 4.6,
-        "main_image": "https://loremflickr.com/1200/700/Mysore,resort,family?lock=5000",
-        "images": [
-          "https://loremflickr.com/1200/700/Mysore,resort,family?lock=5001",
-          "https://loremflickr.com/1200/700/Mysore,resort,family?lock=5002"
-        ],
-        "description": "This premium resort in Mysore offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r6": {
-        "id": "r6",
-        "name": "Kerala Resort 6",
-        "location": "Kerala",
-        "type": "Luxury Villa",
-        "capacity": 2,
-        "price": 7500,
-        "rating": 4.7,
-        "main_image": "https://loremflickr.com/1200/700/Kerala,resort,luxury?lock=6000",
-        "images": [
-          "https://loremflickr.com/1200/700/Kerala,resort,luxury?lock=6001",
-          "https://loremflickr.com/1200/700/Kerala,resort,luxury?lock=6002"
-        ],
-        "description": "This premium resort in Kerala offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r7": {
-        "id": "r7",
-        "name": "Chikmagalur Resort 7",
-        "location": "Chikmagalur",
-        "type": "Premium Suite",
-        "capacity": 3,
-        "price": 8250,
-        "rating": 4.8,
-        "main_image": "https://loremflickr.com/1200/700/Chikmagalur,resort,premium?lock=7000",
-        "images": [
-          "https://loremflickr.com/1200/700/Chikmagalur,resort,premium?lock=7001",
-          "https://loremflickr.com/1200/700/Chikmagalur,resort,premium?lock=7002"
-        ],
-        "description": "This premium resort in Chikmagalur offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r8": {
-        "id": "r8",
-        "name": "Munnar Resort 8",
-        "location": "Munnar",
-        "type": "Deluxe Room",
-        "capacity": 4,
-        "price": 9000,
-        "rating": 4.9,
-        "main_image": "https://loremflickr.com/1200/700/Munnar,resort,deluxe?lock=8000",
-        "images": [
-          "https://loremflickr.com/1200/700/Munnar,resort,deluxe?lock=8001",
-          "https://loremflickr.com/1200/700/Munnar,resort,deluxe?lock=8002"
-        ],
-        "description": "This premium resort in Munnar offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r9": {
-        "id": "r9",
-        "name": "Kodaikanal Resort 9",
-        "location": "Kodaikanal",
-        "type": "Family Suite",
-        "capacity": 5,
-        "price": 9750,
-        "rating": 4.1,
-        "main_image": "https://loremflickr.com/1200/700/Kodaikanal,resort,family?lock=9000",
-        "images": [
-          "https://loremflickr.com/1200/700/Kodaikanal,resort,family?lock=9001",
-          "https://loremflickr.com/1200/700/Kodaikanal,resort,family?lock=9002"
-        ],
-        "description": "This premium resort in Kodaikanal offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r10": {
-        "id": "r10",
-        "name": "Pondicherry Resort 10",
-        "location": "Pondicherry",
-        "type": "Luxury Villa",
-        "capacity": 6,
-        "price": 10500,
-        "rating": 4.2,
-        "main_image": "https://loremflickr.com/1200/700/Pondicherry,resort,luxury?lock=10000",
-        "images": [
-          "https://loremflickr.com/1200/700/Pondicherry,resort,luxury?lock=10001",
-          "https://loremflickr.com/1200/700/Pondicherry,resort,luxury?lock=10002"
-        ],
-        "description": "This premium resort in Pondicherry offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r11": {
-        "id": "r11",
-        "name": "Jaipur Resort 11",
-        "location": "Jaipur",
-        "type": "Premium Suite",
-        "capacity": 7,
-        "price": 11250,
-        "rating": 4.3,
-        "main_image": "https://loremflickr.com/1200/700/Jaipur,resort,premium?lock=11000",
-        "images": [
-          "https://loremflickr.com/1200/700/Jaipur,resort,premium?lock=11001",
-          "https://loremflickr.com/1200/700/Jaipur,resort,premium?lock=11002"
-        ],
-        "description": "This premium resort in Jaipur offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      },
-      "r12": {
-        "id": "r12",
-        "name": "Manali Resort 12",
-        "location": "Manali",
-        "type": "Deluxe Room",
-        "capacity": 2,
-        "price": 12000,
-        "rating": 4.4,
-        "main_image": "https://loremflickr.com/1200/700/Manali,resort,deluxe?lock=12000",
-        "images": [
-          "https://loremflickr.com/1200/700/Manali,resort,deluxe?lock=12001",
-          "https://loremflickr.com/1200/700/Manali,resort,deluxe?lock=12002"
-        ],
-        "description": "This premium resort in Manali offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
-      }
-    },
-    "activities": {
-      "a1": {
-        "id": "a1",
-        "name": "Zip Line",
-        "location": [
-          "Coorg",
-          "Ooty",
-          "Wayanad"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 11,
-        "price": 350,
-        "rating": 4.1,
-        "main_image": "https://loremflickr.com/1200/700/zipline,adventure?lock=11000",
-        "images": [
-          "https://loremflickr.com/1200/700/zipline,adventure?lock=11001",
-          "https://loremflickr.com/1200/700/zipline,adventure?lock=11002"
-        ],
-        "description": "Zip Line is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a2": {
-        "id": "a2",
-        "name": "ATV Ride",
-        "location": [
-          "Ooty",
-          "Wayanad",
-          "Goa"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 12,
-        "price": 400,
-        "rating": 4.2,
-        "main_image": "https://loremflickr.com/1200/700/atvride,adventure?lock=12000",
-        "images": [
-          "https://loremflickr.com/1200/700/atvride,adventure?lock=12001",
-          "https://loremflickr.com/1200/700/atvride,adventure?lock=12002"
-        ],
-        "description": "ATV Ride is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a3": {
-        "id": "a3",
-        "name": "Rock Climbing",
-        "location": [
-          "Wayanad",
-          "Goa",
-          "Mysore"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 13,
-        "price": 450,
-        "rating": 4.3,
-        "main_image": "https://loremflickr.com/1200/700/rockclimbing,adventure?lock=13000",
-        "images": [
-          "https://loremflickr.com/1200/700/rockclimbing,adventure?lock=13001",
-          "https://loremflickr.com/1200/700/rockclimbing,adventure?lock=13002"
-        ],
-        "description": "Rock Climbing is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a4": {
-        "id": "a4",
-        "name": "Paintball",
-        "location": [
-          "Goa",
-          "Mysore",
-          "Kerala"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 14,
-        "price": 500,
-        "rating": 4.4,
-        "main_image": "https://loremflickr.com/1200/700/paintball,adventure?lock=14000",
-        "images": [
-          "https://loremflickr.com/1200/700/paintball,adventure?lock=14001",
-          "https://loremflickr.com/1200/700/paintball,adventure?lock=14002"
-        ],
-        "description": "Paintball is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a5": {
-        "id": "a5",
-        "name": "Archery",
-        "location": [
-          "Mysore",
-          "Kerala",
-          "Chikmagalur"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 15,
-        "price": 550,
-        "rating": 4.5,
-        "main_image": "https://loremflickr.com/1200/700/archery,adventure?lock=15000",
-        "images": [
-          "https://loremflickr.com/1200/700/archery,adventure?lock=15001",
-          "https://loremflickr.com/1200/700/archery,adventure?lock=15002"
-        ],
-        "description": "Archery is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a6": {
-        "id": "a6",
-        "name": "Rope Course",
-        "location": [
-          "Kerala",
-          "Chikmagalur",
-          "Munnar"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 16,
-        "price": 600,
-        "rating": 4.6,
-        "main_image": "https://loremflickr.com/1200/700/ropecourse,adventure?lock=16000",
-        "images": [
-          "https://loremflickr.com/1200/700/ropecourse,adventure?lock=16001",
-          "https://loremflickr.com/1200/700/ropecourse,adventure?lock=16002"
-        ],
-        "description": "Rope Course is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a7": {
-        "id": "a7",
-        "name": "Kayaking",
-        "location": [
-          "Chikmagalur",
-          "Munnar",
-          "Kodaikanal"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 17,
-        "price": 650,
-        "rating": 4.7,
-        "main_image": "https://loremflickr.com/1200/700/kayaking,adventure?lock=17000",
-        "images": [
-          "https://loremflickr.com/1200/700/kayaking,adventure?lock=17001",
-          "https://loremflickr.com/1200/700/kayaking,adventure?lock=17002"
-        ],
-        "description": "Kayaking is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a8": {
-        "id": "a8",
-        "name": "Camping",
-        "location": [
-          "Munnar",
-          "Kodaikanal",
-          "Pondicherry"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 18,
-        "price": 700,
-        "rating": 4.8,
-        "main_image": "https://loremflickr.com/1200/700/camping,adventure?lock=18000",
-        "images": [
-          "https://loremflickr.com/1200/700/camping,adventure?lock=18001",
-          "https://loremflickr.com/1200/700/camping,adventure?lock=18002"
-        ],
-        "description": "Camping is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a9": {
-        "id": "a9",
-        "name": "Trekking",
-        "location": [
-          "Kodaikanal",
-          "Pondicherry",
-          "Jaipur"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 19,
-        "price": 750,
-        "rating": 4.9,
-        "main_image": "https://loremflickr.com/1200/700/trekking,adventure?lock=19000",
-        "images": [
-          "https://loremflickr.com/1200/700/trekking,adventure?lock=19001",
-          "https://loremflickr.com/1200/700/trekking,adventure?lock=19002"
-        ],
-        "description": "Trekking is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a10": {
-        "id": "a10",
-        "name": "Cycling",
-        "location": [
-          "Pondicherry",
-          "Jaipur",
-          "Manali"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 20,
-        "price": 800,
-        "rating": 4,
-        "main_image": "https://loremflickr.com/1200/700/cycling,adventure?lock=20000",
-        "images": [
-          "https://loremflickr.com/1200/700/cycling,adventure?lock=20001",
-          "https://loremflickr.com/1200/700/cycling,adventure?lock=20002"
-        ],
-        "description": "Cycling is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a11": {
-        "id": "a11",
-        "name": "Boating",
-        "location": [
-          "Jaipur",
-          "Manali",
-          "Coorg"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 21,
-        "price": 850,
-        "rating": 4.1,
-        "main_image": "https://loremflickr.com/1200/700/boating,adventure?lock=21000",
-        "images": [
-          "https://loremflickr.com/1200/700/boating,adventure?lock=21001",
-          "https://loremflickr.com/1200/700/boating,adventure?lock=21002"
-        ],
-        "description": "Boating is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a12": {
-        "id": "a12",
-        "name": "Horse Riding",
-        "location": [
-          "Manali",
-          "Coorg",
-          "Ooty"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 22,
-        "price": 900,
-        "rating": 4.2,
-        "main_image": "https://loremflickr.com/1200/700/horseriding,adventure?lock=22000",
-        "images": [
-          "https://loremflickr.com/1200/700/horseriding,adventure?lock=22001",
-          "https://loremflickr.com/1200/700/horseriding,adventure?lock=22002"
-        ],
-        "description": "Horse Riding is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a13": {
-        "id": "a13",
-        "name": "Swimming",
-        "location": [
-          "Coorg",
-          "Ooty",
-          "Wayanad"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 23,
-        "price": 950,
-        "rating": 4.3,
-        "main_image": "https://loremflickr.com/1200/700/swimming,adventure?lock=23000",
-        "images": [
-          "https://loremflickr.com/1200/700/swimming,adventure?lock=23001",
-          "https://loremflickr.com/1200/700/swimming,adventure?lock=23002"
-        ],
-        "description": "Swimming is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a14": {
-        "id": "a14",
-        "name": "Indoor Games",
-        "location": [
-          "Ooty",
-          "Wayanad",
-          "Goa"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 24,
-        "price": 1000,
-        "rating": 4.4,
-        "main_image": "https://loremflickr.com/1200/700/indoorgames,adventure?lock=24000",
-        "images": [
-          "https://loremflickr.com/1200/700/indoorgames,adventure?lock=24001",
-          "https://loremflickr.com/1200/700/indoorgames,adventure?lock=24002"
-        ],
-        "description": "Indoor Games is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      },
-      "a15": {
-        "id": "a15",
-        "name": "Nature Walk",
-        "location": [
-          "Wayanad",
-          "Goa",
-          "Mysore"
-        ],
-        "type": "Adventure Activity",
-        "capacity": 25,
-        "price": 1050,
-        "rating": 4.5,
-        "main_image": "https://loremflickr.com/1200/700/naturewalk,adventure?lock=25000",
-        "images": [
-          "https://loremflickr.com/1200/700/naturewalk,adventure?lock=25001",
-          "https://loremflickr.com/1200/700/naturewalk,adventure?lock=25002"
-        ],
-        "description": "Nature Walk is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
-      }
-    },
-    "eventHalls": {
-      "e1": {
-        "id": "e1",
-        "name": "Wedding Hall 1",
-        "location": "Coorg",
-        "type": "Wedding Hall",
-        "capacity": 150,
-        "price": 9500,
-        "rating": 4.3,
-        "main_image": "https://loremflickr.com/1200/700/Coorg,wedding,hall?lock=21000",
-        "images": [
-          "https://loremflickr.com/1200/700/Coorg,wedding,hall?lock=21001",
-          "https://loremflickr.com/1200/700/Coorg,wedding,hall?lock=21002"
-        ],
-        "description": "This wedding hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-      },
-      "e2": {
-        "id": "e2",
-        "name": "Conference Hall 2",
-        "location": "Ooty",
-        "type": "Conference Hall",
-        "capacity": 200,
-        "price": 12000,
-        "rating": 4.4,
-        "main_image": "https://loremflickr.com/1200/700/Ooty,conference,hall?lock=22000",
-        "images": [
-          "https://loremflickr.com/1200/700/Ooty,conference,hall?lock=22001",
-          "https://loremflickr.com/1200/700/Ooty,conference,hall?lock=22002"
-        ],
-        "description": "This conference hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-      },
-      "e3": {
-        "id": "e3",
-        "name": "Birthday Hall 3",
-        "location": "Wayanad",
-        "type": "Birthday Hall",
-        "capacity": 250,
-        "price": 14500,
-        "rating": 4.5,
-        "main_image": "https://loremflickr.com/1200/700/Wayanad,birthday,hall?lock=23000",
-        "images": [
-          "https://loremflickr.com/1200/700/Wayanad,birthday,hall?lock=23001",
-          "https://loremflickr.com/1200/700/Wayanad,birthday,hall?lock=23002"
-        ],
-        "description": "This birthday hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-      },
-      "e4": {
-        "id": "e4",
-        "name": "Banquet Hall 4",
-        "location": "Goa",
-        "type": "Banquet Hall",
-        "capacity": 300,
-        "price": 17000,
-        "rating": 4.6,
-        "main_image": "https://loremflickr.com/1200/700/Goa,banquet,hall?lock=24000",
-        "images": [
-          "https://loremflickr.com/1200/700/Goa,banquet,hall?lock=24001",
-          "https://loremflickr.com/1200/700/Goa,banquet,hall?lock=24002"
-        ],
-        "description": "This banquet hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-      },
-      "e5": {
-        "id": "e5",
-        "name": "Reception Hall 5",
-        "location": "Mysore",
-        "type": "Reception Hall",
-        "capacity": 350,
-        "price": 19500,
-        "rating": 4.7,
-        "main_image": "https://loremflickr.com/1200/700/Mysore,reception,hall?lock=25000",
-        "images": [
-          "https://loremflickr.com/1200/700/Mysore,reception,hall?lock=25001",
-          "https://loremflickr.com/1200/700/Mysore,reception,hall?lock=25002"
-        ],
-        "description": "This reception hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-      },
-      "e6": {
-        "id": "e6",
-        "name": "Party Hall 6",
-        "location": "Kerala",
-        "type": "Party Hall",
-        "capacity": 400,
-        "price": 22000,
-        "rating": 4.8,
-        "main_image": "https://loremflickr.com/1200/700/Kerala,party,hall?lock=26000",
-        "images": [
-          "https://loremflickr.com/1200/700/Kerala,party,hall?lock=26001",
-          "https://loremflickr.com/1200/700/Kerala,party,hall?lock=26002"
-        ],
-        "description": "This party hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-      },
-      "e7": {
-        "id": "e7",
-        "name": "Convention Hall 7",
-        "location": "Chikmagalur",
-        "type": "Convention Hall",
-        "capacity": 450,
-        "price": 24500,
-        "rating": 4.9,
-        "main_image": "https://loremflickr.com/1200/700/Chikmagalur,convention,hall?lock=27000",
-        "images": [
-          "https://loremflickr.com/1200/700/Chikmagalur,convention,hall?lock=27001",
-          "https://loremflickr.com/1200/700/Chikmagalur,convention,hall?lock=27002"
-        ],
-        "description": "This convention hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-      },
-      "e8": {
-        "id": "e8",
-        "name": "Corporate Hall 8",
-        "location": "Munnar",
-        "type": "Corporate Hall",
-        "capacity": 500,
-        "price": 27000,
-        "rating": 4.2,
-        "main_image": "https://loremflickr.com/1200/700/Munnar,corporate,hall?lock=28000",
-        "images": [
-          "https://loremflickr.com/1200/700/Munnar,corporate,hall?lock=28001",
-          "https://loremflickr.com/1200/700/Munnar,corporate,hall?lock=28002"
-        ],
-        "description": "This corporate hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-      },
-      "e9": {
-        "id": "e9",
-        "name": "Event Arena 9",
-        "location": "Kodaikanal",
-        "type": "Event Arena",
-        "capacity": 550,
-        "price": 29500,
-        "rating": 4.3,
-        "main_image": "https://loremflickr.com/1200/700/Kodaikanal,event,hall?lock=29000",
-        "images": [
-          "https://loremflickr.com/1200/700/Kodaikanal,event,hall?lock=29001",
-          "https://loremflickr.com/1200/700/Kodaikanal,event,hall?lock=29002"
-        ],
-        "description": "This event arena provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-      },
-      "e10": {
-        "id": "e10",
-        "name": "Multi-Purpose Hall 10",
-        "location": "Pondicherry",
-        "type": "Multi-Purpose Hall",
-        "capacity": 600,
-        "price": 32000,
-        "rating": 4.4,
-        "main_image": "https://loremflickr.com/1200/700/Pondicherry,multi-purpose,hall?lock=30000",
-        "images": [
-          "https://loremflickr.com/1200/700/Pondicherry,multi-purpose,hall?lock=30001",
-          "https://loremflickr.com/1200/700/Pondicherry,multi-purpose,hall?lock=30002"
-        ],
-        "description": "This multi-purpose hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-      }
-    },
-    "carts": {
-      "user1": {
-        "resort": [
-          {
-            "id": 355,
-            "resort_id": "r1",
-            "check_in": "15-06-2026",
-            "check_out": "18-06-2026"
-          },
-          {
-            "id": 354,
-            "resort_id": "r4",
-            "check_in": "16-06-2026",
-            "check_out": "20-06-2026"
-          }
-        ],
-        "activities": [
-          {
-            "id": 456,
-            "activities_id": "a1",
-            "date": "14-06-2026"
-          },
-          {
-            "id": 457,
-            "activities_id": "a4",
-            "date": "16-06-2026"
-          }
-        ]
-      },
-      "user2": {
-        "resort": [
-          {
-            "id": 355,
-            "resort_id": "r1",
-            "check_in": "15-06-2026",
-            "check_out": "18-06-2026"
-          },
-          {
-            "id": 354,
-            "resort_id": "r4",
-            "check_in": "16-06-2026",
-            "check_out": "20-06-2026"
-          }
-        ],
-        "activities": [
-          {
-            "id": 456,
-            "activities_id": "a1",
-            "date": "14-06-2026"
-          },
-          {
-            "id": 457,
-            "activities_id": "a4",
-            "date": "16-06-2026"
-          }
-        ]
-      }
-    },
-    "bookings": {
-      "user1": {
-        "resort": [
-          {
-            "id": 355,
-            "resort_id": "r1",
-            "check_in": "15-06-2026",
-            "check_out": "18-06-2026"
-          },
-          {
-            "id": 354,
-            "resort_id": "r4",
-            "check_in": "16-06-2026",
-            "check_out": "20-06-2026"
-          }
-        ],
-        "activities": [
-          {
-            "id": 456,
-            "activities_id": "a1",
-            "date": "14-06-2026"
-          },
-          {
-            "id": 457,
-            "activities_id": "a4",
-            "date": "16-06-2026"
-          }
-        ]
-      },
-      "user2": {
-        "resort": [
-          {
-            "id": 355,
-            "resort_id": "r1",
-            "check_in": "15-06-2026",
-            "check_out": "18-06-2026"
-          },
-          {
-            "id": 354,
-            "resort_id": "r4",
-            "check_in": "16-06-2026",
-            "check_out": "20-06-2026"
-          }
-        ],
-        "activities": [
-          {
-            "id": 456,
-            "activities_id": "a1",
-            "date": "14-06-2026"
-          },
-          {
-            "id": 457,
-            "activities_id": "a4",
-            "date": "16-06-2026"
-          }
-        ]
-      }
-    }
-  },
-  "bookings": [
+  "profiles": [
     {
-      "resortId": "r1",
-      "resortName": "Coorg Resort 1",
-      "checkIn": "2026-06-30",
-      "checkOut": "2026-07-02",
-      "guests": 1,
-      "price": 3750,
-      "id": "ONWOgKK1Rf8"
+      "user_name": "Dinesh Ezhilarasan",
+      "user_mail": "dhineshknk@gmail.com",
+      "id": "eexL3m5k37o"
     },
     {
-      "resortId": "r6",
-      "resortName": "Kerala Resort 6",
-      "checkIn": "2026-07-11",
-      "checkOut": "2026-06-30",
-      "guests": "4",
-      "price": 7500,
-      "id": "Rf_BUWI_y1I"
+      "user_name": "Dinesh E",
+      "user_mail": "mintifizo@gmail.com",
+      "id": "R_2pI_kgRDQ"
     }
   ],
-  "$schema": "./node_modules/json-server/schema.json"
+  "resorts": [
+    {
+      "id": "r1",
+      "name": "Coorg Resort 1",
+      "location": "Coorg",
+      "type": "Family Suite",
+      "capacity": 3,
+      "price": 3750,
+      "rating": 4.2,
+      "main_image": "https://loremflickr.com/1200/700/Coorg,resort,family?lock=1000",
+      "images": [
+        "https://loremflickr.com/1200/700/Coorg,resort,family?lock=1001",
+        "https://loremflickr.com/1200/700/Coorg,resort,family?lock=1002"
+      ],
+      "description": "This premium resort in Coorg offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r2",
+      "name": "Ooty Resort 2",
+      "location": "Ooty",
+      "type": "Luxury Villa",
+      "capacity": 4,
+      "price": 4500,
+      "rating": 4.3,
+      "main_image": "https://loremflickr.com/1200/700/Ooty,resort,luxury?lock=2000",
+      "images": [
+        "https://loremflickr.com/1200/700/Ooty,resort,luxury?lock=2001",
+        "https://loremflickr.com/1200/700/Ooty,resort,luxury?lock=2002"
+      ],
+      "description": "This premium resort in Ooty offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r3",
+      "name": "Wayanad Resort 3",
+      "location": "Wayanad",
+      "type": "Premium Suite",
+      "capacity": 5,
+      "price": 5250,
+      "rating": 4.4,
+      "main_image": "https://loremflickr.com/1200/700/Wayanad,resort,premium?lock=3000",
+      "images": [
+        "https://loremflickr.com/1200/700/Wayanad,resort,premium?lock=3001",
+        "https://loremflickr.com/1200/700/Wayanad,resort,premium?lock=3002"
+      ],
+      "description": "This premium resort in Wayanad offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r4",
+      "name": "Goa Resort 4",
+      "location": "Goa",
+      "type": "Deluxe Room",
+      "capacity": 6,
+      "price": 6000,
+      "rating": 4.5,
+      "main_image": "https://loremflickr.com/1200/700/Goa,resort,deluxe?lock=4000",
+      "images": [
+        "https://loremflickr.com/1200/700/Goa,resort,deluxe?lock=4001",
+        "https://loremflickr.com/1200/700/Goa,resort,deluxe?lock=4002"
+      ],
+      "description": "This premium resort in Goa offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r5",
+      "name": "Mysore Resort 5",
+      "location": "Mysore",
+      "type": "Family Suite",
+      "capacity": 7,
+      "price": 6750,
+      "rating": 4.6,
+      "main_image": "https://loremflickr.com/1200/700/Mysore,resort,family?lock=5000",
+      "images": [
+        "https://loremflickr.com/1200/700/Mysore,resort,family?lock=5001",
+        "https://loremflickr.com/1200/700/Mysore,resort,family?lock=5002"
+      ],
+      "description": "This premium resort in Mysore offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r6",
+      "name": "Kerala Resort 6",
+      "location": "Kerala",
+      "type": "Luxury Villa",
+      "capacity": 2,
+      "price": 7500,
+      "rating": 4.7,
+      "main_image": "https://loremflickr.com/1200/700/Kerala,resort,luxury?lock=6000",
+      "images": [
+        "https://loremflickr.com/1200/700/Kerala,resort,luxury?lock=6001",
+        "https://loremflickr.com/1200/700/Kerala,resort,luxury?lock=6002"
+      ],
+      "description": "This premium resort in Kerala offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r7",
+      "name": "Chikmagalur Resort 7",
+      "location": "Chikmagalur",
+      "type": "Premium Suite",
+      "capacity": 3,
+      "price": 8250,
+      "rating": 4.8,
+      "main_image": "https://loremflickr.com/1200/700/Chikmagalur,resort,premium?lock=7000",
+      "images": [
+        "https://loremflickr.com/1200/700/Chikmagalur,resort,premium?lock=7001",
+        "https://loremflickr.com/1200/700/Chikmagalur,resort,premium?lock=7002"
+      ],
+      "description": "This premium resort in Chikmagalur offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r8",
+      "name": "Munnar Resort 8",
+      "location": "Munnar",
+      "type": "Deluxe Room",
+      "capacity": 4,
+      "price": 9000,
+      "rating": 4.9,
+      "main_image": "https://loremflickr.com/1200/700/Munnar,resort,deluxe?lock=8000",
+      "images": [
+        "https://loremflickr.com/1200/700/Munnar,resort,deluxe?lock=8001",
+        "https://loremflickr.com/1200/700/Munnar,resort,deluxe?lock=8002"
+      ],
+      "description": "This premium resort in Munnar offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r9",
+      "name": "Kodaikanal Resort 9",
+      "location": "Kodaikanal",
+      "type": "Family Suite",
+      "capacity": 5,
+      "price": 9750,
+      "rating": 4.1,
+      "main_image": "https://loremflickr.com/1200/700/Kodaikanal,resort,family?lock=9000",
+      "images": [
+        "https://loremflickr.com/1200/700/Kodaikanal,resort,family?lock=9001",
+        "https://loremflickr.com/1200/700/Kodaikanal,resort,family?lock=9002"
+      ],
+      "description": "This premium resort in Kodaikanal offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r10",
+      "name": "Pondicherry Resort 10",
+      "location": "Pondicherry",
+      "type": "Luxury Villa",
+      "capacity": 6,
+      "price": 10500,
+      "rating": 4.2,
+      "main_image": "https://loremflickr.com/1200/700/Pondicherry,resort,luxury?lock=10000",
+      "images": [
+        "https://loremflickr.com/1200/700/Pondicherry,resort,luxury?lock=10001",
+        "https://loremflickr.com/1200/700/Pondicherry,resort,luxury?lock=10002"
+      ],
+      "description": "This premium resort in Pondicherry offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r11",
+      "name": "Jaipur Resort 11",
+      "location": "Jaipur",
+      "type": "Premium Suite",
+      "capacity": 7,
+      "price": 11250,
+      "rating": 4.3,
+      "main_image": "https://loremflickr.com/1200/700/Jaipur,resort,premium?lock=11000",
+      "images": [
+        "https://loremflickr.com/1200/700/Jaipur,resort,premium?lock=11001",
+        "https://loremflickr.com/1200/700/Jaipur,resort,premium?lock=11002"
+      ],
+      "description": "This premium resort in Jaipur offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    },
+    {
+      "id": "r12",
+      "name": "Manali Resort 12",
+      "location": "Manali",
+      "type": "Deluxe Room",
+      "capacity": 2,
+      "price": 12000,
+      "rating": 4.4,
+      "main_image": "https://loremflickr.com/1200/700/Manali,resort,deluxe?lock=12000",
+      "images": [
+        "https://loremflickr.com/1200/700/Manali,resort,deluxe?lock=12001",
+        "https://loremflickr.com/1200/700/Manali,resort,deluxe?lock=12002"
+      ],
+      "description": "This premium resort in Manali offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+    }
+  ],
+  "activities": [
+    {
+      "id": "a1",
+      "name": "Zip Line",
+      "location": [
+        "Coorg",
+        "Ooty",
+        "Wayanad"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 11,
+      "price": 350,
+      "rating": 4.1,
+      "main_image": "https://loremflickr.com/1200/700/zipline,adventure?lock=11000",
+      "images": [
+        "https://loremflickr.com/1200/700/zipline,adventure?lock=11001",
+        "https://loremflickr.com/1200/700/zipline,adventure?lock=11002"
+      ],
+      "description": "Zip Line is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a2",
+      "name": "ATV Ride",
+      "location": [
+        "Ooty",
+        "Wayanad",
+        "Goa"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 12,
+      "price": 400,
+      "rating": 4.2,
+      "main_image": "https://loremflickr.com/1200/700/atvride,adventure?lock=12000",
+      "images": [
+        "https://loremflickr.com/1200/700/atvride,adventure?lock=12001",
+        "https://loremflickr.com/1200/700/atvride,adventure?lock=12002"
+      ],
+      "description": "ATV Ride is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a3",
+      "name": "Rock Climbing",
+      "location": [
+        "Wayanad",
+        "Goa",
+        "Mysore"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 13,
+      "price": 450,
+      "rating": 4.3,
+      "main_image": "https://loremflickr.com/1200/700/rockclimbing,adventure?lock=13000",
+      "images": [
+        "https://loremflickr.com/1200/700/rockclimbing,adventure?lock=13001",
+        "https://loremflickr.com/1200/700/rockclimbing,adventure?lock=13002"
+      ],
+      "description": "Rock Climbing is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a4",
+      "name": "Paintball",
+      "location": [
+        "Goa",
+        "Mysore",
+        "Kerala"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 14,
+      "price": 500,
+      "rating": 4.4,
+      "main_image": "https://loremflickr.com/1200/700/paintball,adventure?lock=14000",
+      "images": [
+        "https://loremflickr.com/1200/700/paintball,adventure?lock=14001",
+        "https://loremflickr.com/1200/700/paintball,adventure?lock=14002"
+      ],
+      "description": "Paintball is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a5",
+      "name": "Archery",
+      "location": [
+        "Mysore",
+        "Kerala",
+        "Chikmagalur"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 15,
+      "price": 550,
+      "rating": 4.5,
+      "main_image": "https://loremflickr.com/1200/700/archery,adventure?lock=15000",
+      "images": [
+        "https://loremflickr.com/1200/700/archery,adventure?lock=15001",
+        "https://loremflickr.com/1200/700/archery,adventure?lock=15002"
+      ],
+      "description": "Archery is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a6",
+      "name": "Rope Course",
+      "location": [
+        "Kerala",
+        "Chikmagalur",
+        "Munnar"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 16,
+      "price": 600,
+      "rating": 4.6,
+      "main_image": "https://loremflickr.com/1200/700/ropecourse,adventure?lock=16000",
+      "images": [
+        "https://loremflickr.com/1200/700/ropecourse,adventure?lock=16001",
+        "https://loremflickr.com/1200/700/ropecourse,adventure?lock=16002"
+      ],
+      "description": "Rope Course is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a7",
+      "name": "Kayaking",
+      "location": [
+        "Chikmagalur",
+        "Munnar",
+        "Kodaikanal"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 17,
+      "price": 650,
+      "rating": 4.7,
+      "main_image": "https://loremflickr.com/1200/700/kayaking,adventure?lock=17000",
+      "images": [
+        "https://loremflickr.com/1200/700/kayaking,adventure?lock=17001",
+        "https://loremflickr.com/1200/700/kayaking,adventure?lock=17002"
+      ],
+      "description": "Kayaking is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a8",
+      "name": "Camping",
+      "location": [
+        "Munnar",
+        "Kodaikanal",
+        "Pondicherry"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 18,
+      "price": 700,
+      "rating": 4.8,
+      "main_image": "https://loremflickr.com/1200/700/camping,adventure?lock=18000",
+      "images": [
+        "https://loremflickr.com/1200/700/camping,adventure?lock=18001",
+        "https://loremflickr.com/1200/700/camping,adventure?lock=18002"
+      ],
+      "description": "Camping is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a9",
+      "name": "Trekking",
+      "location": [
+        "Kodaikanal",
+        "Pondicherry",
+        "Jaipur"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 19,
+      "price": 750,
+      "rating": 4.9,
+      "main_image": "https://loremflickr.com/1200/700/trekking,adventure?lock=19000",
+      "images": [
+        "https://loremflickr.com/1200/700/trekking,adventure?lock=19001",
+        "https://loremflickr.com/1200/700/trekking,adventure?lock=19002"
+      ],
+      "description": "Trekking is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a10",
+      "name": "Cycling",
+      "location": [
+        "Pondicherry",
+        "Jaipur",
+        "Manali"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 20,
+      "price": 800,
+      "rating": 4,
+      "main_image": "https://loremflickr.com/1200/700/cycling,adventure?lock=20000",
+      "images": [
+        "https://loremflickr.com/1200/700/cycling,adventure?lock=20001",
+        "https://loremflickr.com/1200/700/cycling,adventure?lock=20002"
+      ],
+      "description": "Cycling is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a11",
+      "name": "Boating",
+      "location": [
+        "Jaipur",
+        "Manali",
+        "Coorg"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 21,
+      "price": 850,
+      "rating": 4.1,
+      "main_image": "https://loremflickr.com/1200/700/boating,adventure?lock=21000",
+      "images": [
+        "https://loremflickr.com/1200/700/boating,adventure?lock=21001",
+        "https://loremflickr.com/1200/700/boating,adventure?lock=21002"
+      ],
+      "description": "Boating is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a12",
+      "name": "Horse Riding",
+      "location": [
+        "Manali",
+        "Coorg",
+        "Ooty"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 22,
+      "price": 900,
+      "rating": 4.2,
+      "main_image": "https://loremflickr.com/1200/700/horseriding,adventure?lock=22000",
+      "images": [
+        "https://loremflickr.com/1200/700/horseriding,adventure?lock=22001",
+        "https://loremflickr.com/1200/700/horseriding,adventure?lock=22002"
+      ],
+      "description": "Horse Riding is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a13",
+      "name": "Swimming",
+      "location": [
+        "Coorg",
+        "Ooty",
+        "Wayanad"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 23,
+      "price": 950,
+      "rating": 4.3,
+      "main_image": "https://loremflickr.com/1200/700/swimming,adventure?lock=23000",
+      "images": [
+        "https://loremflickr.com/1200/700/swimming,adventure?lock=23001",
+        "https://loremflickr.com/1200/700/swimming,adventure?lock=23002"
+      ],
+      "description": "Swimming is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a14",
+      "name": "Indoor Games",
+      "location": [
+        "Ooty",
+        "Wayanad",
+        "Goa"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 24,
+      "price": 1000,
+      "rating": 4.4,
+      "main_image": "https://loremflickr.com/1200/700/indoorgames,adventure?lock=24000",
+      "images": [
+        "https://loremflickr.com/1200/700/indoorgames,adventure?lock=24001",
+        "https://loremflickr.com/1200/700/indoorgames,adventure?lock=24002"
+      ],
+      "description": "Indoor Games is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    },
+    {
+      "id": "a15",
+      "name": "Nature Walk",
+      "location": [
+        "Wayanad",
+        "Goa",
+        "Mysore"
+      ],
+      "type": "Adventure Activity",
+      "capacity": 25,
+      "price": 1050,
+      "rating": 4.5,
+      "main_image": "https://loremflickr.com/1200/700/naturewalk,adventure?lock=25000",
+      "images": [
+        "https://loremflickr.com/1200/700/naturewalk,adventure?lock=25001",
+        "https://loremflickr.com/1200/700/naturewalk,adventure?lock=25002"
+      ],
+      "description": "Nature Walk is a popular recreational experience designed for guests seeking fun, adventure, and memorable moments. Professional supervision, safety equipment, and well-maintained facilities ensure an enjoyable experience for visitors of all ages."
+    }
+  ],
+  "eventHalls": [
+    {
+      "id": "e1",
+      "name": "Wedding Hall 1",
+      "location": "Coorg",
+      "type": "Wedding Hall",
+      "capacity": 150,
+      "price": 9500,
+      "rating": 4.3,
+      "main_image": "https://loremflickr.com/1200/700/Coorg,wedding,hall?lock=21000",
+      "images": [
+        "https://loremflickr.com/1200/700/Coorg,wedding,hall?lock=21001",
+        "https://loremflickr.com/1200/700/Coorg,wedding,hall?lock=21002"
+      ],
+      "description": "This wedding hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+    },
+    {
+      "id": "e2",
+      "name": "Conference Hall 2",
+      "location": "Ooty",
+      "type": "Conference Hall",
+      "capacity": 200,
+      "price": 12000,
+      "rating": 4.4,
+      "main_image": "https://loremflickr.com/1200/700/Ooty,conference,hall?lock=22000",
+      "images": [
+        "https://loremflickr.com/1200/700/Ooty,conference,hall?lock=22001",
+        "https://loremflickr.com/1200/700/Ooty,conference,hall?lock=22002"
+      ],
+      "description": "This conference hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+    },
+    {
+      "id": "e3",
+      "name": "Birthday Hall 3",
+      "location": "Wayanad",
+      "type": "Birthday Hall",
+      "capacity": 250,
+      "price": 14500,
+      "rating": 4.5,
+      "main_image": "https://loremflickr.com/1200/700/Wayanad,birthday,hall?lock=23000",
+      "images": [
+        "https://loremflickr.com/1200/700/Wayanad,birthday,hall?lock=23001",
+        "https://loremflickr.com/1200/700/Wayanad,birthday,hall?lock=23002"
+      ],
+      "description": "This birthday hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+    },
+    {
+      "id": "e4",
+      "name": "Banquet Hall 4",
+      "location": "Goa",
+      "type": "Banquet Hall",
+      "capacity": 300,
+      "price": 17000,
+      "rating": 4.6,
+      "main_image": "https://loremflickr.com/1200/700/Goa,banquet,hall?lock=24000",
+      "images": [
+        "https://loremflickr.com/1200/700/Goa,banquet,hall?lock=24001",
+        "https://loremflickr.com/1200/700/Goa,banquet,hall?lock=24002"
+      ],
+      "description": "This banquet hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+    },
+    {
+      "id": "e5",
+      "name": "Reception Hall 5",
+      "location": "Mysore",
+      "type": "Reception Hall",
+      "capacity": 350,
+      "price": 19500,
+      "rating": 4.7,
+      "main_image": "https://loremflickr.com/1200/700/Mysore,reception,hall?lock=25000",
+      "images": [
+        "https://loremflickr.com/1200/700/Mysore,reception,hall?lock=25001",
+        "https://loremflickr.com/1200/700/Mysore,reception,hall?lock=25002"
+      ],
+      "description": "This reception hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+    },
+    {
+      "id": "e6",
+      "name": "Party Hall 6",
+      "location": "Kerala",
+      "type": "Party Hall",
+      "capacity": 400,
+      "price": 22000,
+      "rating": 4.8,
+      "main_image": "https://loremflickr.com/1200/700/Kerala,party,hall?lock=26000",
+      "images": [
+        "https://loremflickr.com/1200/700/Kerala,party,hall?lock=26001",
+        "https://loremflickr.com/1200/700/Kerala,party,hall?lock=26002"
+      ],
+      "description": "This party hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+    },
+    {
+      "id": "e7",
+      "name": "Convention Hall 7",
+      "location": "Chikmagalur",
+      "type": "Convention Hall",
+      "capacity": 450,
+      "price": 24500,
+      "rating": 4.9,
+      "main_image": "https://loremflickr.com/1200/700/Chikmagalur,convention,hall?lock=27000",
+      "images": [
+        "https://loremflickr.com/1200/700/Chikmagalur,convention,hall?lock=27001",
+        "https://loremflickr.com/1200/700/Chikmagalur,convention,hall?lock=27002"
+      ],
+      "description": "This convention hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+    },
+    {
+      "id": "e8",
+      "name": "Corporate Hall 8",
+      "location": "Munnar",
+      "type": "Corporate Hall",
+      "capacity": 500,
+      "price": 27000,
+      "rating": 4.2,
+      "main_image": "https://loremflickr.com/1200/700/Munnar,corporate,hall?lock=28000",
+      "images": [
+        "https://loremflickr.com/1200/700/Munnar,corporate,hall?lock=28001",
+        "https://loremflickr.com/1200/700/Munnar,corporate,hall?lock=28002"
+      ],
+      "description": "This corporate hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+    },
+    {
+      "id": "e9",
+      "name": "Event Arena 9",
+      "location": "Kodaikanal",
+      "type": "Event Arena",
+      "capacity": 550,
+      "price": 29500,
+      "rating": 4.3,
+      "main_image": "https://loremflickr.com/1200/700/Kodaikanal,event,hall?lock=29000",
+      "images": [
+        "https://loremflickr.com/1200/700/Kodaikanal,event,hall?lock=29001",
+        "https://loremflickr.com/1200/700/Kodaikanal,event,hall?lock=29002"
+      ],
+      "description": "This event arena provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+    },
+    {
+      "id": "e10",
+      "name": "Multi-Purpose Hall 10",
+      "location": "Pondicherry",
+      "type": "Multi-Purpose Hall",
+      "capacity": 600,
+      "price": 32000,
+      "rating": 4.4,
+      "main_image": "https://loremflickr.com/1200/700/Pondicherry,multi-purpose,hall?lock=30000",
+      "images": [
+        "https://loremflickr.com/1200/700/Pondicherry,multi-purpose,hall?lock=30001",
+        "https://loremflickr.com/1200/700/Pondicherry,multi-purpose,hall?lock=30002"
+      ],
+      "description": "This multi-purpose hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+    }
+  ],
+  "carts": [
+    {
+      "id": 353,
+      "user_id": "R_2pI_kgRDQ",
+      "resort_id": "r1",
+      "check_in": "15-06-2026",
+      "check_out": "18-06-2026",
+      "guests": 1
+    },
+    {
+      "id": 354,
+      "user_id": "eexL3m5k37o",
+      "resort_id": "r4",
+      "check_in": "16-06-2026",
+      "check_out": "20-06-2026",
+      "guests": 1
+    },
+    {
+      "id": 355,
+      "resort_id": "r7",
+      "user_id": "R_2pI_kgRDQ",
+      "check_in": "20-07-2026",
+      "check_out": "23-07-2026",
+      "guests": 1
+    },
+    {
+      "id": 356,
+      "resort_id": "r3",
+      "user_id": "eexL3m5k37o",
+      "check_in": "25-07-2026",
+      "check_out": "28-07-2026",
+      "guests": 1
+    },
+    {
+      "id": 357,
+      "user_id": "R_2pI_kgRDQ",
+      "activities_id": "a1",
+      "date": "18-06-2026",
+      "guests": 1
+    },
+    {
+      "id": 358,
+      "user_id": "eexL3m5k37o",
+      "activities_id": "a4",
+      "date": "16-06-2026",
+      "guests": 1
+    },
+    {
+      "id": 359,
+      "activities_id": "a7",
+      "user_id": "R_2pI_kgRDQ",
+      "date": "20-07-2026",
+      "guests": 1
+    },
+    {
+      "id": 360,
+      "activities_id": "a3",
+      "user_id": "eexL3m5k37o",
+      "date": "25-07-2026",
+      "guests": 1
+    }
+  ],
+  "bookings": [
+    {
+      "id": 353,
+      "user_id": "R_2pI_kgRDQ",
+      "resort_id": "r1",
+      "check_in": "15-06-2026",
+      "check_out": "18-06-2026",
+      "guests": 1
+    },
+    {
+      "id": 354,
+      "user_id": "eexL3m5k37o",
+      "resort_id": "r4",
+      "check_in": "16-06-2026",
+      "check_out": "20-06-2026",
+      "guests": 1
+    },
+    {
+      "id": 355,
+      "resort_id": "r7",
+      "user_id": "R_2pI_kgRDQ",
+      "check_in": "20-07-2026",
+      "check_out": "23-07-2026",
+      "guests": 1
+    },
+    {
+      "id": 356,
+      "resort_id": "r3",
+      "user_id": "eexL3m5k37o",
+      "check_in": "25-07-2026",
+      "check_out": "28-07-2026",
+      "guests": 1
+    },
+    {
+      "id": 357,
+      "user_id": "R_2pI_kgRDQ",
+      "activities_id": "a1",
+      "date": "18-06-2026",
+      "guests": 1
+    },
+    {
+      "id": 358,
+      "user_id": "eexL3m5k37o",
+      "activities_id": "a4",
+      "date": "16-06-2026",
+      "guests": 1
+    },
+    {
+      "id": 359,
+      "activities_id": "a7",
+      "user_id": "R_2pI_kgRDQ",
+      "date": "20-07-2026",
+      "guests": 1
+    },
+    {
+      "id": 360,
+      "activities_id": "a3",
+      "user_id": "eexL3m5k37o",
+      "date": "25-07-2026",
+      "guests": 1
+    }
+  ]
 }
