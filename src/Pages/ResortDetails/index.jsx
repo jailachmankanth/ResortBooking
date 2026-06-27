@@ -40,7 +40,7 @@ const ResortDetails = () => {
     price: resort.price
   };
 
-  axios.post("http://localhost:3001/bookings", bookingData)
+  axios.post("http://localhost:3001/carts", bookingData)
     .then(() => {
       alert("Booking Successful!");
           setCheckIn("");

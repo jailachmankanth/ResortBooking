@@ -749,5 +749,26 @@
         ]
       }
     }
-  }
+  },
+  "bookings": [
+    {
+      "resortId": "r1",
+      "resortName": "Coorg Resort 1",
+      "checkIn": "2026-06-30",
+      "checkOut": "2026-07-02",
+      "guests": 1,
+      "price": 3750,
+      "id": "ONWOgKK1Rf8"
+    },
+    {
+      "resortId": "r6",
+      "resortName": "Kerala Resort 6",
+      "checkIn": "2026-07-11",
+      "checkOut": "2026-06-30",
+      "guests": "4",
+      "price": 7500,
+      "id": "Rf_BUWI_y1I"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
