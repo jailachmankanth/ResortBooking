@@ -8,6 +8,9 @@ import Login from './Pages/login'
 import Home from './Pages/home/Index'
 import Resorts from './Pages/resorts'
 import ResortDetails from './Pages/ResortDetails'
+import EventHall from './Pages/eventHalls'
+import EventHallDetails from './Pages/eventHallDetails'
+import Profile from './Pages/Profile'
 import Activity from './Pages/Activity'
 import Profile from './Pages/Profile';
 import Cart from './Pages/Cart/Cart'
@@ -43,6 +46,14 @@ const App = () => {
             <ResortDetails />
           </PrivateRoute>
         } />
+        <Route path='/eventhalls' element={
+          <PrivateRoute>
+            <EventHall />
+          </PrivateRoute>
+        } />
+        <Route path='/eventhall/:id' element={
+          <PrivateRoute>
+            <EventHallDetails />
         <Route path='/activities' element={
           <PrivateRoute>
             <Activity />

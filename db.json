@@ -563,154 +563,154 @@
   ],
   "eventHalls": [
     {
-      "id": "e1",
-      "name": "Wedding Hall 1",
-      "location": "Coorg",
-      "type": "Wedding Hall",
-      "capacity": 150,
-      "price": 9500,
-      "rating": 4.3,
-      "main_image": "https://loremflickr.com/1200/700/Coorg,wedding,hall?lock=21000",
-      "images": [
-        "https://loremflickr.com/1200/700/Coorg,wedding,hall?lock=21001",
-        "https://loremflickr.com/1200/700/Coorg,wedding,hall?lock=21002"
-      ],
-      "description": "This wedding hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-    },
-    {
-      "id": "e2",
-      "name": "Conference Hall 2",
-      "location": "Ooty",
-      "type": "Conference Hall",
-      "capacity": 200,
-      "price": 12000,
-      "rating": 4.4,
-      "main_image": "https://loremflickr.com/1200/700/Ooty,conference,hall?lock=22000",
-      "images": [
-        "https://loremflickr.com/1200/700/Ooty,conference,hall?lock=22001",
-        "https://loremflickr.com/1200/700/Ooty,conference,hall?lock=22002"
-      ],
-      "description": "This conference hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-    },
-    {
-      "id": "e3",
-      "name": "Birthday Hall 3",
-      "location": "Wayanad",
-      "type": "Birthday Hall",
-      "capacity": 250,
-      "price": 14500,
-      "rating": 4.5,
-      "main_image": "https://loremflickr.com/1200/700/Wayanad,birthday,hall?lock=23000",
-      "images": [
-        "https://loremflickr.com/1200/700/Wayanad,birthday,hall?lock=23001",
-        "https://loremflickr.com/1200/700/Wayanad,birthday,hall?lock=23002"
-      ],
-      "description": "This birthday hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-    },
-    {
       "id": "e4",
-      "name": "Banquet Hall 4",
+      "name": "Ocean Breeze Grand Ballroom",
       "location": "Goa",
-      "type": "Banquet Hall",
       "capacity": 300,
       "price": 17000,
       "rating": 4.6,
-      "main_image": "https://loremflickr.com/1200/700/Goa,banquet,hall?lock=24000",
+      "reviews": 1240,
+      "main_image": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2014/09/21/1726/GOAGH-P226-Indoor-Wedding-Grand-Ballroom.jpg/GOAGH-P226-Indoor-Wedding-Grand-Ballroom.16x9.jpg",
       "images": [
-        "https://loremflickr.com/1200/700/Goa,banquet,hall?lock=24001",
-        "https://loremflickr.com/1200/700/Goa,banquet,hall?lock=24002"
+        "https://img.partyslate.com/photos/a1fc2784-a905-47cb-948f-b3906a7c008b-ps.jpg?tr=w-1200",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK8bepZcah2GsTlFLuI8nPWDno5pG0KXevh9u9yHQAxw&s"
       ],
-      "description": "This banquet hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-    },
-    {
-      "id": "e5",
-      "name": "Reception Hall 5",
-      "location": "Mysore",
-      "type": "Reception Hall",
-      "capacity": 350,
-      "price": 19500,
-      "rating": 4.7,
-      "main_image": "https://loremflickr.com/1200/700/Mysore,reception,hall?lock=25000",
-      "images": [
-        "https://loremflickr.com/1200/700/Mysore,reception,hall?lock=25001",
-        "https://loremflickr.com/1200/700/Mysore,reception,hall?lock=25002"
-      ],
-      "description": "This reception hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-    },
-    {
-      "id": "e6",
-      "name": "Party Hall 6",
-      "location": "Kerala",
-      "type": "Party Hall",
-      "capacity": 400,
-      "price": 22000,
-      "rating": 4.8,
-      "main_image": "https://loremflickr.com/1200/700/Kerala,party,hall?lock=26000",
-      "images": [
-        "https://loremflickr.com/1200/700/Kerala,party,hall?lock=26001",
-        "https://loremflickr.com/1200/700/Kerala,party,hall?lock=26002"
-      ],
-      "description": "This party hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-    },
-    {
-      "id": "e7",
-      "name": "Convention Hall 7",
-      "location": "Chikmagalur",
-      "type": "Convention Hall",
-      "capacity": 450,
-      "price": 24500,
-      "rating": 4.9,
-      "main_image": "https://loremflickr.com/1200/700/Chikmagalur,convention,hall?lock=27000",
-      "images": [
-        "https://loremflickr.com/1200/700/Chikmagalur,convention,hall?lock=27001",
-        "https://loremflickr.com/1200/700/Chikmagalur,convention,hall?lock=27002"
-      ],
-      "description": "This convention hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
-    },
-    {
-      "id": "e8",
-      "name": "Corporate Hall 8",
-      "location": "Munnar",
-      "type": "Corporate Hall",
-      "capacity": 500,
-      "price": 27000,
-      "rating": 4.2,
-      "main_image": "https://loremflickr.com/1200/700/Munnar,corporate,hall?lock=28000",
-      "images": [
-        "https://loremflickr.com/1200/700/Munnar,corporate,hall?lock=28001",
-        "https://loremflickr.com/1200/700/Munnar,corporate,hall?lock=28002"
-      ],
-      "description": "This corporate hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+      "description": "A luxurious beachfront ballroom offering direct access to the sandy shores. Features grand crystal chandeliers and floor-to-ceiling windows, ideal for vibrant destination weddings and spectacular gala dinners."
     },
     {
       "id": "e9",
-      "name": "Event Arena 9",
+      "name": "Pine Valley Amphitheater & Hall",
       "location": "Kodaikanal",
-      "type": "Event Arena",
       "capacity": 550,
       "price": 29500,
       "rating": 4.3,
-      "main_image": "https://loremflickr.com/1200/700/Kodaikanal,event,hall?lock=29000",
+      "reviews": 560,
+      "main_image": "https://skyviewempyrean.com/wp-content/uploads/2023/08/pine-view-banquet-hall-jammu7.jpg",
       "images": [
-        "https://loremflickr.com/1200/700/Kodaikanal,event,hall?lock=29001",
-        "https://loremflickr.com/1200/700/Kodaikanal,event,hall?lock=29002"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaCgetYQOFiX-UT0a-KqKOA-wo6314lnG9Ai4oXcBYU3KzkL1UftMROa8G&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeAl_C-OPEQp2bWbTxBD14BfO-vuymZKzChiDV7TmwXrUQYLXI4GsJHiI&s=10"
       ],
-      "description": "This event arena provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+      "description": "An expansive indoor-outdoor arena surrounded by ancient pine trees. The venue offers versatile seating arrangements and a dramatic, misty backdrop for grand events or massive celebrations."
+    },
+    {
+      "id": "e5",
+      "name": "The Royal Orchid Enclave",
+      "location": "Mysore",
+      "capacity": 350,
+      "price": 19500,
+      "rating": 4.7,
+      "reviews": 812,
+      "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSGbAOxxBJg4IsAZoQCGYODgSe3BSXq9HdCNibhDWCE7xnhZtctcdC0Eu8&s=10",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQozVTbsZpBKX0sMKFvmyJd1eQiPyXg9pLHtyM-Ydf14s5q1IFj-X_fvCkS&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDcsfYi0PvERNi6uuFfpUeMoKAT20gp_d-kd79c0l190fCbiZEvFQpdY&s=10"
+      ],
+      "description": "Inspired by the regal palaces of Mysore, this magnificent hall boasts ornate pillars and royal tapestries, providing an opulent atmosphere for grand receptions and extravagant cultural events."
+    },
+    {
+      "id": "e1",
+      "name": "The Kodava Heritage Pavilion",
+      "location": "Coorg",
+      "capacity": 150,
+      "price": 9500,
+      "rating": 4.3,
+      "reviews": 320,
+      "main_image": "https://www.theleela.com/prod/content/assets/2026-06/6%20-%20Restuarant_1035x600_0.jpg?VersionId=uTE0W3vMqHVBCTZ1dvSc0rNrT2ttPjyZ",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSks44Vd0fwfXOwFXRQx--YPi3Q7jJKWmdkcNe8ifVANA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxpD7ceIpxTPZL3OyDXPUm4T3HEVdBvR-PJcxV8F_yKyv9Nx8TPQEwCAUb&s=10"
+      ],
+      "description": "Nestled in the lush hills of Coorg, this heritage pavilion features traditional architecture and panoramic natural views, making it an intimate and breathtaking setting for boutique weddings and private gatherings."
+    },
+    {
+      "id": "e6",
+      "name": "Backwater Serenity Pavilion",
+      "location": "Kerala",
+      "capacity": 400,
+      "price": 22000,
+      "rating": 4.8,
+      "reviews": 1150,
+      "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3oj01ETzIn71lLkfh-R8-zUPBGURhTHlmZg7MtXROj6tkKwNQdKw&s=10",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQSJ3iugeiTT5_tZykY9VYlcnNtJcm6dv-u44rRf4i8g&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqfecIdHZsM717PEtp7GEPIh4Q4g1icULa5PuxqW41RQ&s"
+      ],
+      "description": "Overlooking the tranquil Kerala backwaters, this pavilion beautifully blends traditional Kerala design with contemporary luxury, offering a serene and highly picturesque venue for large, unforgettable celebrations."
+    },
+    {
+      "id": "e7",
+      "name": "The Arabica Event Lawn & Hall",
+      "location": "Chikmagalur",
+      "capacity": 450,
+      "price": 24500,
+      "rating": 4.9,
+      "reviews": 1560,
+      "main_image": "https://content.jdmagicbox.com/v2/comp/bangalore/w8/080pxx80.xx80.190301200518.d7w8/catalogue/nandanavana-convention-hall-bannerghatta-bangalore-banquet-halls-0r56rsvtfo.jpg",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMlt5Zm-EioyDb7rwkQOwJeP-w_ErV-8cY_nKOhQ76uv-HFte3gcS7EZE&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg508fgEdto6Jdwt_3enkX2SrADr6EAZ06vnYb-GxoU61IzU7kjCd5WGjD&s=102"
+      ],
+      "description": "Located within a sprawling coffee estate, this stunning glass-walled hall allows guests to celebrate seamlessly with nature. It strikes the perfect balance of rustic charm and premium modern amenities for conventions."
+    },
+    {
+      "id": "e3",
+      "name": "Silver Woods Banquet",
+      "location": "Wayanad",
+      "capacity": 250,
+      "price": 14500,
+      "rating": 4.5,
+      "reviews": 890,
+      "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWWGhF1cgOTM5YI1VvqUyn4YPTUuMLsiMxj3HvwD_JNEZ0xCxkTG6nHX8_&s=10",
+      "images": [
+        "https://images.venuebookingz.com/24392-1622785167-wm-silver-wood-farm-hyderabad-wedding-venue-3.jpg",
+        "https://image.wedmegood.com/resized/720X/uploads/member/934682/1756971817_image5539.jpg"
+      ],
+      "description": "Surrounded by misty mountains and tropical forests, this exquisite banquet hall offers a magical and secluded backdrop for milestone celebrations, intimate parties, and family get-togethers."
     },
     {
       "id": "e10",
-      "name": "Multi-Purpose Hall 10",
+      "name": "L'Aura French Heritage Court",
       "location": "Pondicherry",
-      "type": "Multi-Purpose Hall",
       "capacity": 600,
       "price": 32000,
       "rating": 4.4,
-      "main_image": "https://loremflickr.com/1200/700/Pondicherry,multi-purpose,hall?lock=30000",
+      "reviews": 2100,
+      "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIOI3bVn4sV0Zzh5KJvd46ftCecH1v5uRZEFhIjSdHLwUNjkNLVMztQg&s=10",
       "images": [
-        "https://loremflickr.com/1200/700/Pondicherry,multi-purpose,hall?lock=30001",
-        "https://loremflickr.com/1200/700/Pondicherry,multi-purpose,hall?lock=30002"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAgivIM-inFRrcpaVTA84M0KhcZLVygQS3XvJkXFRC2B5wEyinB7h31SE&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPWQvCSKYWRJsPUZ-em6UJR_lBjEGELm2tw7dOr68gM-kfuHqdTAwTu_k&s=10"
       ],
-      "description": "This multi-purpose hall provides a spacious and elegant venue suitable for celebrations, meetings, conferences, and special occasions. Modern facilities, flexible seating arrangements, and dedicated event support ensure a successful event experience."
+      "description": "Reflecting the elegant colonial architecture of Pondicherry, this massive venue features stunning courtyards and grand arches. It is perfectly suited for massive exhibitions, weddings, and extravagant parties."
+    },
+    {
+      "id": "e2",
+      "name": "Nilgiri Crown Convention Center",
+      "location": "Ooty",
+      "capacity": 200,
+      "price": 12000,
+      "rating": 4.4,
+      "reviews": 730,
+      "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxvagpXIPSfr_TacVkxkGWXwBOm0nz75hM6Z0WRz_ZIgAJesmPgNXwgKbu&s=10",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMWj6gVGtVSLf-th67MBknfHJP0Ev8SIo7n1QZKnRePGP0071bk5VmkFgU&s=10",
+        "https://image.wedmegood.com/resized/720X/uploads/member/715880/1574428737_Screenshot_10.png"
+      ],
+      "description": "Set amidst the rolling tea gardens of Ooty, this state-of-the-art convention center combines colonial charm with modern acoustics, making it perfect for high-level corporate retreats, seminars, and networking events."
+    },
+    {
+      "id": "e8",
+      "name": "Misty Peaks Corporate Forum",
+      "location": "Munnar",
+      "capacity": 500,
+      "price": 27000,
+      "rating": 4.2,
+      "reviews": 465,
+      "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKRkUG0YzzhxUA5604Ts9VX2fgjXHwdw4ZWB6WTZ4hug9_BUhv5-zOX5FB&s=10",
+      "images": [
+        "https://cdn0.weddingwire.in/vendor/1723/3_2/640/jpg/hotel-olive-golden-ridge-hotel-space2_15_331723-159577383849000.jpeg1",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjs5LX-hL0H8TJW9J-zKkfoImtZhzixjFxvCm9WSRGMwKx4X83t_YdOzX6&s=10"
+      ],
+      "description": "Perched high in the Munnar hills, this sophisticated venue features climate-controlled interiors and advanced audio-visual technology tailored specifically for large-scale corporate symposiums and global conferences."
     }
   ],
   "resort_carts": [
@@ -822,6 +822,24 @@
       "date": "2026-06-29",
       "guests": "3",
       "id": "_rXsu3SaJ4c"
+    }
+  ],
+  "eventHalls_carts": [
+    {
+      "user_id": "R_2pI_kgRDQ",
+      "eventHall_id": "e4",
+      "check_in": "2026-06-28",
+      "check_out": "2026-06-30",
+      "guests": "4",
+      "id": "zz8hiDcszZg"
+    },
+    {
+      "user_id": "R_2pI_kgRDQ",
+      "eventHall_id": "e7",
+      "check_in": "2026-06-30",
+      "check_out": "2026-07-02",
+      "guests": "5000",
+      "id": "TSQ76iBVUWc"
     }
   ],
   "resort_bookings": [

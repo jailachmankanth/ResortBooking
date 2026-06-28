@@ -162,9 +162,9 @@ const Index = () => {
         <h2>What Our Guests Say</h2>
 
         <div className='reviewgrid'>
-          <img src="/reviews/review1.png" alt="review1" />
-          <img src="/reviews/review2.png" alt="review2" />
-          <img src="/reviews/review3.png" alt="review3" />
+          <img src="../../../public/landing-p-img/review-1.png" alt="review1" />
+          <img src="../../../public/landing-p-img/review-2.png" alt="review2" />
+          <img src="../../../public/landing-p-img/review-3.png" alt="review3" />
         </div>
       </section>
     </div>
