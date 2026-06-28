@@ -1,224 +1,231 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #f7f8fa;
+.resort-list {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f8f8;
+  padding: clamp(16px, 4vw, 40px) clamp(15px, 5vw, 5%);
   font-family: "Poppins", sans-serif;
-}
-
-.resort-details {
-  width: 92%;
-  margin: 40px auto;
-}
-
-/* ================= TOP SECTION ================= */
-
-.top-section {
-  display: flex;
-  gap: 25px;
-  align-items: flex-start;
-}
-
-/* ================= GALLERY ================= */
-
-.gallery {
-  flex: 2;
-  display: flex;
-  gap: 15px;
-}
-
-.main-image {
-  flex: 2;
-}
-
-.main-image img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 18px;
-}
-
-.side-images {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.side-images img {
-  width: 100%;
-  height: 242px;
-  object-fit: cover;
-  border-radius: 18px;
-}
-
-/* ================= BOOKING CARD ================= */
-
-.booking-card {
-  flex: 1;
-  background: #fff;
-  padding: 28px;
-  border-radius: 18px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  position: sticky;
-  top: 100px;
-}
-
-.booking-card h2 {
-  font-size: 34px;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-
-.booking-card span {
-  font-size: 18px;
-  color: #666;
-  font-weight: 500;
-}
-
-.booking-card label {
-  display: block;
-  margin-top: 18px;
-  margin-bottom: 8px;
-  font-weight: 600;
-  color: #333;
-}
-
-.booking-card input,
-.booking-card select {
-  width: 100%;
-  padding: 14px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  outline: none;
-  font-size: 15px;
-}
-
-.booking-card button {
-  width: 100%;
-  margin-top: 25px;
-  padding: 16px;
-  border: none;
-  border-radius: 10px;
-  background: #ffb74d;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: .3s;
-}
-
-.booking-card button:hover {
-  background: #ffa726;
-}
-
-.booking-card p {
-  margin-top: 15px;
-  text-align: center;
-  color: #666;
-  font-size: 14px;
-}
-
-/* ================= DETAILS ================= */
-
-.details {
-  margin-top: 45px;
-  width: 70%;
-}
-
-.details h1 {
-  font-size: 55px;
-  font-weight: 700;
-  color: #222;
-}
-
-.info {
-  display: flex;
-  gap: 30px;
-  margin-top: 18px;
-  color: #666;
-  font-size: 18px;
-}
-
-.description {
-  margin-top: 25px;
-  line-height: 1.8;
-  color: #555;
-  font-size: 18px;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 992px) {
-
-  .top-section {
-    flex-direction: column;
-  }
-
-  .gallery {
-    flex-direction: column;
-  }
-
-  .main-image img {
-    height: 400px;
-  }
-
-  .side-images {
-    flex-direction: row;
-  }
-
-  .side-images img {
-    width: 50%;
-    height: 220px;
-  }
-
-  .booking-card {
-    width: 100%;
-    position: static;
-  }
-
-  .details {
-    width: 100%;
-  }
-
-  .details h1 {
-    font-size: 38px;
-  }
-
-}
-
-@media (max-width: 768px) {
 
   .resort-details {
-    width: 95%;
+    max-width: 1400px;
+    margin: auto;
   }
 
-  .side-images {
-    flex-direction: column;
+  .top-section {
+    display: flex;
+    gap: clamp(16px, 2vw, 25px);
+    align-items: flex-start;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
-  .side-images img {
+  // ======================
+  // Gallery Section
+  // ======================
+  .gallery {
+    flex: 1;
+    display: flex;
+    gap: clamp(8px, 1.5vw, 15px);
     width: 100%;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+
+    .main-image {
+      flex: 2;
+      min-width: 0;
+
+      img {
+        width: 100%;
+        height: clamp(220px, 38vw, 500px);
+        object-fit: cover;
+        border-radius: clamp(10px, 1.5vw, 18px);
+        display: block;
+      }
+    }
+
+    .side-images {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: clamp(8px, 1.5vw, 15px);
+      min-width: 0;
+
+      @media (max-width: 700px) {
+        flex-direction: row;
+      }
+
+      img {
+        width: 100%;
+        height: clamp(110px, 18vw, 242px);
+        object-fit: cover;
+        border-radius: clamp(10px, 1.5vw, 18px);
+        display: block;
+        flex: 1;
+      }
+    }
   }
 
-  .details h1 {
-    font-size: 30px;
+  // ======================
+  // Booking Card
+  // ======================
+  .booking-card {
+    width: 350px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 18px;
+    padding: clamp(16px, 2vw, 24px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 20px;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      max-width: 450px;
+      position: static;
+    }
+
+    @media (max-width: 480px) {
+      max-width: 100%;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 1.1rem + 1.2vw, 2rem);
+      color: #222;
+      margin-bottom: clamp(16px, 2vw, 25px);
+
+      span {
+        font-size: 1rem;
+        color: #666;
+        font-weight: 400;
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      margin-top: 15px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input,
+    select {
+      width: 100%;
+      height: clamp(44px, 4vw, 50px);
+      border: none;
+      background: #f2f4f5;
+      border-radius: 12px;
+      padding: 0 15px;
+      font-size: 1rem;
+      outline: none;
+      margin-bottom: 5px;
+
+      &:focus {
+        border: 2px solid #0b6b64;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: clamp(46px, 4.5vw, 55px);
+      margin-top: 20px;
+      border: none;
+      border-radius: 12px;
+      background: #f5b351;
+      color: #111;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: #e5a243;
+      }
+
+      &:active {
+        background: #d49339;
+      }
+    }
+
+    p {
+      text-align: center;
+      margin-top: 15px;
+      color: #666;
+      font-size: 0.9rem;
+    }
   }
 
-  .info {
-    flex-direction: column;
-    gap: 10px;
-    font-size: 16px;
-  }
+  // ======================
+  // Resort Details
+  // ======================
+  .details {
+    margin-top: clamp(24px, 4vw, 40px);
+    max-width: 900px;
 
-  .description {
-    font-size: 16px;
-  }
+    h1 {
+      font-size: clamp(1.7rem, 1.1rem + 3.2vw, 3.5rem);
+      color: #1c1c1c;
+      margin-bottom: clamp(12px, 2vw, 20px);
+      line-height: 1.1;
+      word-break: break-word;
+    }
 
-  .booking-card h2 {
-    font-size: 28px;
-  }
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(10px, 1.5vw, 20px);
+      margin-bottom: clamp(16px, 2vw, 25px);
 
+      span {
+        color: #555;
+        font-size: clamp(0.85rem, 0.78rem + 0.3vw, 1rem);
+        white-space: nowrap;
+      }
+    }
+
+    p {
+      font-size: clamp(0.95rem, 0.85rem + 0.3vw, 1.15rem);
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: clamp(16px, 2vw, 25px);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(8px, 1vw, 12px);
+
+      span {
+        background: #dceceb;
+        color: #0b6b64;
+        padding: clamp(6px, 0.8vw, 8px) clamp(12px, 1.5vw, 18px);
+        border-radius: 30px;
+        font-size: clamp(0.8rem, 0.75rem + 0.2vw, 0.9rem);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* ===================================
+   Extra-small phones
+=================================== */
+@media (max-width: 380px) {
+  .resort-list {
+    .booking-card {
+      input,
+      select,
+      button {
+        height: 44px;
+      }
+    }
+
+    .gallery .side-images {
+      flex-direction: column;
+    }
+  }
 }
