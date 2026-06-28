@@ -9,6 +9,11 @@
       "user_name": "Dinesh E",
       "user_mail": "mintifizo@gmail.com",
       "id": "R_2pI_kgRDQ"
+    },
+    {
+      "user_name": "jai",
+      "user_mail": "jai@gmail.com",
+      "id": "4LhTm6peRgI"
     }
   ],
   "resorts": [
@@ -791,7 +796,7 @@
       "id": "0SgEIKXOAZc"
     }
   ],
-  "resort_bookings":[
+  "resort_bookings": [
     {
       "id": "353",
       "user_id": "R_2pI_kgRDQ",
