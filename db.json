@@ -14,6 +14,11 @@
       "user_name": "jai",
       "user_mail": "jai@gmail.com",
       "id": "4LhTm6peRgI"
+    },
+    {
+      "user_name": "Bhava",
+      "user_mail": "abc@gmail.com",
+      "id": "r_yC0Iz-5Lk"
     }
   ],
   "resorts": [
@@ -794,6 +799,21 @@
       "check_out": "2026-06-30",
       "guests": "3",
       "id": "0SgEIKXOAZc"
+    },
+    {
+      "activityId": "a1",
+      "activityName": "Zip Line",
+      "date": "2026-06-30",
+      "guests": 1,
+      "id": "zo5KNhhwovo"
+    },
+    {
+      "user_id": "r_yC0Iz-5Lk",
+      "activityId": "a2",
+      "activityName": "ATV Ride",
+      "date": "2026-06-29",
+      "guests": "3",
+      "id": "_rXsu3SaJ4c"
     }
   ],
   "resort_bookings": [
@@ -858,6 +878,13 @@
       "user_id": "eexL3m5k37o",
       "date": "25-07-2026",
       "guests": 1
+    },
+    {
+      "activityId": "a1",
+      "activityName": "Zip Line",
+      "date": "2026-06-30",
+      "guests": 1,
+      "id": "1cMt5aI0dCE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
