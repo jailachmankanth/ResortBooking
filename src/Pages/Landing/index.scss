@@ -12,6 +12,7 @@
     display: block;
   }
 
+  // ─── HERO ───────────────────────────────────────────────
   .hero {
     position: relative;
 
@@ -21,34 +22,37 @@
       inset: 0;
       background: linear-gradient(
         rgba(0, 0, 0, 0.15),
-        rgba(0, 0, 0, 0.45)
+        rgba(0, 0, 0, 0.55)
       );
     }
   }
 
   .brandlogo {
-  position: absolute;
-  bottom: 80px;
-  left: 80px;
-  z-index: 10;
+    position: absolute;
+    bottom: 80px;
+    left: 80px;
+    z-index: 10;
+    max-width: calc(100% - 40px); // prevent overflow on all screens
 
-  h1 {
-    font-size: 70px;
-    color: white;
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 2px;
+    h1 {
+      font-size: 70px;
+      color: white;
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 2px;
+      line-height: 1.1;
+    }
+
+    p {
+      color: #d4af37;
+      font-size: 20px;
+      letter-spacing: 4px;
+      margin-top: 12px;
+      text-transform: uppercase;
+    }
   }
 
-  p {
-    color: #d4af37;
-    font-size: 20px;
-    letter-spacing: 4px;
-    margin-top: 12px;
-    text-transform: uppercase;
-  }
-}
-
+  // ─── MARQUEE ────────────────────────────────────────────
   .offers {
     width: 100%;
     height: 60px;
@@ -73,14 +77,11 @@
   }
 
   @keyframes marquee {
-    0% {
-      transform: translate(100vw, -50%);
-    }
-    100% {
-      transform: translate(-100%, -50%);
-    }
+    0%   { transform: translate(100vw, -50%); }
+    100% { transform: translate(-100%, -50%); }
   }
 
+  // ─── ABOUT ──────────────────────────────────────────────
   .about {
     max-width: 1100px;
     margin: 80px auto;
@@ -101,6 +102,7 @@
     }
   }
 
+  // ─── FEATURES CARDS ─────────────────────────────────────
   .featuresdetails {
     width: 90%;
     margin: 80px auto;
@@ -114,7 +116,7 @@
     .fdcard3 {
       background: white;
       flex: 1;
-      min-width: 320px;
+      min-width: 280px;
       max-width: 380px;
       padding: 35px 28px;
       border-radius: 20px;
@@ -177,6 +179,7 @@
     }
   }
 
+  // ─── VIP FEATURES ───────────────────────────────────────
   .vipfeatures {
     width: 92%;
     margin: 100px auto;
@@ -249,6 +252,11 @@
         color: #d4af37;
         font-weight: 600;
         cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          background: rgba(212, 175, 55, 0.1);
+        }
       }
     }
 
@@ -288,37 +296,7 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .landingmain .vipfeatures {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .landingmain {
-    img {
-      height: 50vh;
-    }
-
-    .about h1 {
-      font-size: 28px;
-    }
-
-    .featuresdetails {
-      flex-direction: column;
-    }
-
-    .vipfeatures {
-      grid-template-columns: 1fr;
-      padding: 40px 20px;
-
-      h2 {
-        font-size: 30px;
-      }
-    }
-  }
-}
-
+// ─── WHY GRANDORIA ──────────────────────────────────────
 .whygrandoria {
   width: 92%;
   margin: 100px auto;
@@ -349,13 +327,13 @@
     background: white;
     padding: 35px 25px;
     border-radius: 22px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-    border: 1px solid rgba(212,175,55,0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(212, 175, 55, 0.15);
     transition: 0.3s ease;
 
     &:hover {
       transform: translateY(-8px);
-      box-shadow: 0 12px 30px rgba(212,175,55,0.15);
+      box-shadow: 0 12px 30px rgba(212, 175, 55, 0.15);
     }
 
     i {
@@ -377,6 +355,7 @@
   }
 }
 
+// ─── GALLERY ────────────────────────────────────────────
 .gallerysection {
   width: 92%;
   margin: 120px auto;
@@ -398,7 +377,7 @@
       height: 260px;
       object-fit: cover;
       border-radius: 20px;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
       transition: 0.4s ease;
       cursor: pointer;
 
@@ -409,6 +388,7 @@
   }
 }
 
+// ─── REVIEWS ────────────────────────────────────────────
 .reviews {
   width: 92%;
   margin: 120px auto;
@@ -431,43 +411,285 @@
       height: 420px;
       object-fit: cover;
       border-radius: 20px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-      border: 1px solid rgba(212,175,55,0.2);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.2);
       transition: 0.4s ease;
 
       &:hover {
         transform: translateY(-8px);
-        box-shadow: 0 18px 40px rgba(212,175,55,0.2);
+        box-shadow: 0 18px 40px rgba(212, 175, 55, 0.2);
       }
     }
   }
 }
 
+// ════════════════════════════════════════════════════════
+// RESPONSIVE BREAKPOINTS
+// ════════════════════════════════════════════════════════
+
+// ─── LAPTOP / LARGE TABLET (max 1200px) ─────────────────
 @media (max-width: 1200px) {
+  .landingmain {
+    .brandlogo {
+      left: 50px;
+      bottom: 60px;
+
+      h1 {
+        font-size: 54px;
+      }
+
+      p {
+        font-size: 16px;
+        letter-spacing: 3px;
+      }
+    }
+
+    .vipfeatures {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 50px 30px;
+    }
+
+    .about h1 {
+      font-size: 42px;
+    }
+  }
+
   .whygrandoria .whycontent,
   .gallerysection .gallerygrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
+// ─── TABLET (max 1024px) ────────────────────────────────
+@media (max-width: 1024px) {
+  .landingmain {
+    .brandlogo {
+      left: 40px;
+      bottom: 50px;
+
+      h1 {
+        font-size: 46px;
+      }
+
+      p {
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+    }
+
+    .about {
+      margin: 60px auto;
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+    }
+
+    .featuresdetails {
+      width: 94%;
+      gap: 20px;
+
+      .fdcard1,
+      .fdcard2,
+      .fdcard3 {
+        min-width: 260px;
+      }
+    }
+
+    .vipfeatures {
+      width: 94%;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 40px 24px;
+
+      h2 {
+        font-size: 34px;
+      }
+    }
+  }
+
   .whygrandoria {
+    h2 { font-size: 34px; }
+
     .whycontent {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
   }
 
   .gallerysection {
+    h2 { font-size: 34px; }
+
     .gallerygrid {
+      grid-template-columns: repeat(2, 1fr);
+
+      img { height: 220px; }
+    }
+  }
+
+  .reviews h2 { font-size: 34px; }
+}
+
+// ─── MOBILE (max 768px) ─────────────────────────────────
+@media (max-width: 768px) {
+  .landingmain {
+    img {
+      height: 60vh;
+    }
+
+    // ✅ FIX: Grandoria title no longer overflows on mobile
+    .brandlogo {
+      left: 20px;
+      right: 20px;        // constrain right edge
+      bottom: 30px;
+      max-width: calc(100% - 40px);
+
+      h1 {
+        font-size: clamp(24px, 7vw, 42px); // fluid: shrinks gracefully
+        letter-spacing: 1px;
+        word-break: break-word;
+      }
+
+      p {
+        font-size: clamp(11px, 3vw, 15px);
+        letter-spacing: 1.5px;
+        margin-top: 8px;
+      }
+    }
+
+    .offers h3 {
+      font-size: 16px;
+    }
+
+    .about {
+      margin: 50px auto;
+      padding: 0 20px;
+
+      h1 {
+        font-size: clamp(24px, 6vw, 34px);
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .featuresdetails {
+      flex-direction: column;
+      width: 92%;
+      gap: 20px;
+
+      .fdcard1,
+      .fdcard2,
+      .fdcard3 {
+        min-width: unset;
+        max-width: 100%;
+      }
+    }
+
+    .vipfeatures {
       grid-template-columns: 1fr;
+      padding: 36px 20px;
+      margin: 60px auto;
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .whygrandoria {
+    margin: 60px auto;
+
+    h2 { font-size: 28px; }
+
+    .subtitle { font-size: 15px; }
+
+    .whycontent {
+      grid-template-columns: 1fr;
+      margin-top: 36px;
+    }
+  }
+
+  .gallerysection {
+    margin: 70px auto;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .gallerygrid {
+      grid-template-columns: 1fr 1fr; // 2-col grid on mobile looks better than 1
+      gap: 12px;
+
+      img {
+        height: 160px;
+        border-radius: 14px;
+      }
     }
   }
 
   .reviews {
-    .reviewgrid img {
-      width: 100%;
-      max-width: 340px;
-      height: auto;
+    margin: 70px auto;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
     }
+
+    .reviewgrid {
+      gap: 16px;
+
+      img {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+      }
+    }
+  }
+}
+
+// ─── SMALL MOBILE (max 480px) ───────────────────────────
+@media (max-width: 480px) {
+  .landingmain {
+    img {
+      height: 55vh;
+    }
+
+    .brandlogo {
+      bottom: 24px;
+      left: 16px;
+      right: 16px;
+
+      h1 {
+        font-size: clamp(20px, 6.5vw, 30px);
+      }
+
+      p {
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .vipfeatures {
+      border-radius: 20px;
+      padding: 28px 16px;
+    }
+  }
+
+  .gallerysection .gallerygrid {
+    grid-template-columns: 1fr;
+
+    img { height: 200px; }
+  }
+
+  .whygrandoria .whybox {
+    padding: 28px 20px;
   }
 }

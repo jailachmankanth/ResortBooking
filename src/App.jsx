@@ -8,6 +8,7 @@ import Login from './Pages/login'
 import Home from './Pages/home/Index'
 import Resorts from './Pages/resorts'
 import ResortDetails from './Pages/ResortDetails'
+import Profile from './Pages/Profile';
 import Cart from './Pages/Cart/Cart'
 import Edit from './Pages/Edit/Edit'
 import Success from './Pages/Sucess/Sucess'

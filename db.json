@@ -9,6 +9,11 @@
       "user_name": "Dinesh E",
       "user_mail": "mintifizo@gmail.com",
       "id": "R_2pI_kgRDQ"
+    },
+    {
+      "user_name": "jai",
+      "user_mail": "jai@gmail.com",
+      "id": "4LhTm6peRgI"
     }
   ],
   "resorts": [
@@ -21,7 +26,11 @@
       "price": 3750,
       "rating": 4.2,
       "reviews": 1240,
-      "tags": ["spa", "infinity pool", "nature walk"],
+      "tags": [
+        "spa",
+        "infinity pool",
+        "nature walk"
+      ],
       "main_image": "https://cdn.sanity.io/images/ocl5w36p/ihcl_prod/138c964c174829cb4e397fc6da1212011a865ba2-3841x1861.jpg?w=480&auto=format&dpr=2",
       "images": [
         "https://d1p55htxo8z8mf.cloudfront.net/4226016e-b526-49d7-9411-319e283f7519.jpg?format=webp&width=800",
@@ -72,7 +81,11 @@
       "price": 6000,
       "rating": 4.5,
       "reviews": 3450,
-      "tags": ["beachfront", "party area", "water sports"],
+      "tags": [
+        "beachfront",
+        "party area",
+        "water sports"
+      ],
       "main_image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/753970832.jpg?k=5a4f54617182dc84b9ebb71e2c6130e466cd1fd864ef2a0e2ff3e2790d216c82&o=",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6__vIvR8z1c2FDoSXRWjCzSfZG0U1t7tZ5Igo2TRf5bQsCdb_I-xjnqu&s=10",
@@ -106,7 +119,11 @@
       "price": 7500,
       "rating": 4.7,
       "reviews": 1620,
-      "tags": ["backwaters", "houseboat", "infinity pool"],
+      "tags": [
+        "backwaters",
+        "houseboat",
+        "infinity pool"
+      ],
       "main_image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/15267976.jpg?k=ccbd56d126e190805d37c39da38a87bf5cce7d758bbf49063d57e18a38adcc73&o=",
       "images": [
         "https://www.kumarakomlakeresort.in/assets/images/luxury-dining/vembanad-the-seafood-bar/vembanad-the-seafood-bar.jpg",
@@ -123,7 +140,11 @@
       "price": 8250,
       "rating": 4.8,
       "reviews": 1150,
-      "tags": ["coffee plantation", "private pool", "cycling"],
+      "tags": [
+        "coffee plantation",
+        "private pool",
+        "cycling"
+      ],
       "main_image": "https://assets.simplotel.com/simplotel/image/upload/x_52,y_0,w_666,h_500,r_0,c_crop,q_90,fl_progressive/w_500,f_auto,c_fit/the-serai-chikmagalur/the-residence-facade",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWGURhs2yj9N-vGbBGvY1DzoDPF8abX3aFHwHGN06IhDEuRZswpqLBRQ&s=10",
@@ -140,7 +161,11 @@
       "price": 9000,
       "rating": 4.9,
       "reviews": 1890,
-      "tags": ["rooftop pool", "helipad", "valley view"],
+      "tags": [
+        "rooftop pool",
+        "helipad",
+        "valley view"
+      ],
       "main_image": "https://media-cdn.tripadvisor.com/media/photo-i/0e/a4/44/e2/the-panoramic-getaway.jpg",
       "images": [
         "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/d5/86/9d/renovated-adults-heated.jpg?w=900&h=500&s=1",
@@ -173,7 +198,11 @@
       "price": 10500,
       "rating": 4.2,
       "reviews": 1420,
-      "tags": ["private beach", "french architecture", "party area"],
+      "tags": [
+        "private beach",
+        "french architecture",
+        "party area"
+      ],
       "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_NPz4bAGdW6NwxYDX4CJMfWdh_UsHlqSkdfqd_BpmX2mYrO2nykJ59ARb&s=10",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS746L51nPAXZlgdk6AtT_PqyilXdl1H5TZADmy_DopBrV9R3jWg8mja72m&s=10",
@@ -190,7 +219,11 @@
       "price": 11250,
       "rating": 4.3,
       "reviews": 2200,
-      "tags": ["royal heritage", "polo bar", "peacock garden"],
+      "tags": [
+        "royal heritage",
+        "polo bar",
+        "peacock garden"
+      ],
       "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfe9CHX-Xi1ASI6oYLLwnmE_B5Aq4ZWMeh1NNuq0OPgQXgi1LhwUxBWitM&s=10",
       "images": [
         "https://cf.bstatic.com/xdata/images/hotel/max1024x768/407617043.jpg?k=4b4f195bab585ff06a9c5d9f5feae6bc6227f83b9129a3bfc33320d960e4629a&o=",
@@ -743,7 +776,7 @@
       "id": "0SgEIKXOAZc"
     }
   ],
-  "resort_bookings":[
+  "resort_bookings": [
     {
       "id": "353",
       "user_id": "R_2pI_kgRDQ",
