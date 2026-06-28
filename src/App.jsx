@@ -12,6 +12,7 @@ import Profile from './Pages/Profile';
 import Cart from './Pages/Cart/Cart'
 import Edit from './Pages/Edit/Edit'
 import Success from './Pages/Sucess/Sucess'
+import Contact from './Pages/Contact'
 import Footer from './uiLayouts/Footer/Footer'
 
 const App = () => {
@@ -56,6 +57,7 @@ const App = () => {
             <Success />
           </PrivateRoute>
         }/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

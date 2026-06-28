@@ -17,6 +17,8 @@ function Resorts() {
     const [locations, setLocations] = useState([])
     const [filterLocation, setFilterLocation] = useState("")
     const [filterTags, setFilterTags] = useState([])
+    const [selectedRating, setSelectedRating] = useState(0)
+    const [sortValue, setSortValue] = useState(0)
 
     useEffect(() => {
         async function fetchResorts(params) {
@@ -34,59 +36,61 @@ function Resorts() {
         fetchResorts()
     }, [])
 
-    // useEffect(()=>{
-    //     console.log(locations);
-    // }, [locations])
-
     function handleApply() {
         setAppleBtn(prev => !prev)
     }
 
-
-    //     useEffect(() => {
-    //         const temp = []
-    //         const filterResorts = (search != "" || filterTags.length !== 0 || filterLocation != "") ? (
-    //             resortsData.map((item, index) => {
-    //                 if (item.name.toLowerCase().includes(search.toLowerCase()) || item.description.toLowerCase().includes(search.toLowerCase()) || item.tags.some(tag => filterTags.includes(tag)) || item.location === filterLocation)
-    //                 })) : resortsData
-
-
-    //         if (filterResorts) {
-    //             temp.push(item)
-    //         }
-    //     })
-    // }
-    // setOriginalData(temp)
-
-    //     }, [search, applyBtn, filterTags, filterLocation])
-
     useEffect(() => {
         const temp = resortsData.filter(item => {
-            const matchesSearch =
-                search === "" || item.name.toLowerCase().includes(search.toLowerCase()) || item.description.toLowerCase().includes(search.toLowerCase());
+            const matchesSearch = item.name.toLowerCase().includes(search.toLowerCase()) || item.description.toLowerCase().includes(search.toLowerCase());
 
-            const matchesTags =
-                filterTags.length === 0 || item.tags.some(tag => filterTags.includes(tag));
+            const matchesTags = filterTags.length === 0 || item.tags.some(tag => filterTags.includes(tag));
 
-            const matchesLocation =
-                filterLocation === "" || item.location === filterLocation;
+            const matchesLocation = filterLocation === "" || item.location === filterLocation;
+
+            const matchRating = item.rating >= selectedRating
 
             return matchesSearch &&
                 matchesTags &&
-                matchesLocation;
+                matchesLocation &&
+                matchRating;
         });
 
         const hasFilters = search !== "" || filterTags.length > 0 || filterLocation !== "";
 
         if (!hasFilters) {
-            setOriginalData(resortsData);
+            if (sortValue == 0) {
+                setOriginalData(resortsData);
+            } else if (sortValue == 1) {
+                const sortedResorts = [...resortsData].sort(
+                    (a, b) => a.price - b.price
+                );
+                setOriginalData(sortedResorts);
+            } else if (sortValue == 2) {
+                const sortedResorts = [...resortsData].sort(
+                    (a, b) => b.price - a.price
+                );
+                setOriginalData(sortedResorts);
+            }
         } else if (temp.length > 0) {
-            setOriginalData(temp);
-        } else if(temp.length === 0) {
+            if (sortValue == 0) {
+                setOriginalData(temp);
+            } else if (sortValue == 1) {
+                const sortedResorts = [...temp].sort(
+                    (a, b) => a.price - b.price
+                );
+                setOriginalData(sortedResorts);
+            } else if (sortValue == 2) {
+                const sortedResorts = [...temp].sort(
+                    (a, b) => b.price - a.price
+                );
+                setOriginalData(sortedResorts);
+            }
+        } else if (temp.length === 0) {
             setOriginalData([])
         }
 
-    }, [resortsData, search, filterTags, filterLocation]);
+    }, [resortsData, search, selectedRating, filterTags, filterLocation, sortValue]);
 
     function handleSelect(e) {
         const value = e.target.value
@@ -99,15 +103,11 @@ function Resorts() {
 
     function handleLocation(e) {
         setFilterLocation(e.target.value);
-
     }
 
-    // const renderingData = originalData.length !== 0 ? originalData : resortsData;
-    // const renderingData = originalData.length !== 0 ? originalData : resortsData
-
-    // useEffect(()=>{
-    //     console.log(renderingData);  
-    // }, [renderingData])
+    function handleSort(e) {
+        setSortValue(e.target.value)
+    }
 
     return (
         <div className="resorts-page">
@@ -154,9 +154,32 @@ function Resorts() {
                         <label>Minimum Rating</label>
 
                         <div className="ratings">
-                            <button>4+</button>
-                            <button>4.5+</button>
-                            <button>5.0</button>
+                            <button
+                                className={selectedRating === 4 ? "active" : ""}
+                                onClick={() => setSelectedRating(
+                                    selectedRating === 4 ? 0 : 4
+                                )}
+                            >
+                                4+
+                            </button>
+
+                            <button
+                                className={selectedRating === 4.5 ? "active" : ""}
+                                onClick={() => setSelectedRating(
+                                    selectedRating === 4.5 ? 0 : 4.5
+                                )}
+                            >
+                                4.5+
+                            </button>
+
+                            <button
+                                className={selectedRating === 5 ? "active" : ""}
+                                onClick={() => setSelectedRating(
+                                    selectedRating === 5 ? 0 : 5
+                                )}
+                            >
+                                5.0
+                            </button>
                         </div>
                     </div>
 
@@ -176,10 +199,6 @@ function Resorts() {
                             }
                         </div>
                     </div>
-
-                    <button className="apply-btn" onClick={handleApply}>
-                        Apply Filters
-                    </button>
                 </aside>
 
                 {/* Resort Cards */}
@@ -189,72 +208,72 @@ function Resorts() {
                             Showing {originalData.length} premium stays
                         </p>
 
-                        <select>
-                            <option>Recommended</option>
-                            <option>Price Low to High</option>
-                            <option>Price High to Low</option>
+                        <select onChange={handleSort}>
+                            <option value={0}>Recommended</option>
+                            <option value={1}>Price Low to High</option>
+                            <option value={2}>Price High to Low</option>
                         </select>
                     </div>
 
                     {
-                        originalData.length === 0 ? (<h1 className="zero-tag">No Resorts Found</h1>):
+                        originalData.length === 0 ? (<h1 className="zero-tag">No Resorts Found</h1>) :
 
-                        (originalData.map((item, index) => {
-                            return (
-                                <div className="resort-card" key={item.id}>
-                                    <div className="resort-image">
-                                        <img
-                                            src={item.main_image}
-                                            alt={item.name}
-                                        />
+                            (originalData.map((item, index) => {
+                                return (
+                                    <div className="resort-card" key={item.id}>
+                                        <div className="resort-image">
+                                            <img
+                                                src={item.main_image}
+                                                alt={item.name}
+                                            />
 
-                                        <button className="wishlist">
-                                            <FaHeart />
-                                        </button>
+                                            <button className="wishlist">
+                                                <FaHeart />
+                                            </button>
 
-                                        <div className="rating-badge">
-                                            <FaStar />
-                                            {item.rating}/5.0 ({item.reviews})
-                                        </div>
-                                    </div>
-
-                                    <div className="resort-info">
-                                        <h2>{item.name}</h2>
-
-                                        <p className="location">
-                                            <FaMapMarkerAlt />
-                                            {item.location}
-                                        </p>
-
-                                        <p className="description">
-                                            {item.description}
-                                        </p>
-
-                                        <div className="tags">
-                                            {item.tags.map((tag, index) => (
-                                                <span key={index}>{tag}</span>
-                                            ))}
+                                            <div className="rating-badge">
+                                                <FaStar />
+                                                {item.rating}/5.0 ({item.reviews})
+                                            </div>
                                         </div>
 
-                                        <div className="price-row">
-                                            <div>
-                                                <small>STARTING FROM</small>
-                                                <h3>
-                                                    ₹{item.price}
-                                                    <span>/ night</span>
-                                                </h3>
+                                        <div className="resort-info">
+                                            <h2>{item.name}</h2>
+
+                                            <p className="location">
+                                                <FaMapMarkerAlt />
+                                                {item.location}
+                                            </p>
+
+                                            <p className="description">
+                                                {item.description}
+                                            </p>
+
+                                            <div className="tags">
+                                                {item.tags.map((tag, index) => (
+                                                    <span key={index}>{tag}</span>
+                                                ))}
                                             </div>
 
-                                            <Link to={`/resort/${item.id}`}><button className="details-btn">
-                                                View Details
-                                            </button></Link>
+                                            <div className="price-row">
+                                                <div>
+                                                    <small>STARTING FROM</small>
+                                                    <h3>
+                                                        ₹{item.price}
+                                                        <span>/ night</span>
+                                                    </h3>
+                                                </div>
+
+                                                <Link to={`/resort/${item.id}`}><button className="details-btn">
+                                                    View Details
+                                                </button></Link>
 
 
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            )
-                        }))
+                                )
+                            }))
                     }
                 </section>
             </div>
