@@ -745,6 +745,14 @@
       "check_in": "25-07-2026",
       "check_out": "28-07-2026",
       "guests": 1
+    },
+    {
+      "user_id": "4LhTm6peRgI",
+      "resort_id": "r6",
+      "check_in": "2026-06-28",
+      "check_out": "2026-06-30",
+      "guests": "2",
+      "id": "SVl-zoDw8Ig"
     }
   ],
   "activities_carts": [
@@ -848,6 +856,30 @@
       "check_in": "25-07-2026",
       "check_out": "28-07-2026",
       "guests": 1
+    },
+    {
+      "user_id": "4LhTm6peRgI",
+      "resort_id": "r6",
+      "check_in": "2026-06-28",
+      "check_out": "2026-06-30",
+      "guests": "2",
+      "id": "PL06B8QAE2Q"
+    },
+    {
+      "user_id": "4LhTm6peRgI",
+      "resort_id": "r4",
+      "check_in": "2026-07-01",
+      "check_out": "2026-07-03",
+      "guests": "3",
+      "id": "Ak6DBELuIDA"
+    },
+    {
+      "user_id": "4LhTm6peRgI",
+      "resort_id": "r12",
+      "check_in": "2026-08-01",
+      "check_out": "2026-08-05",
+      "guests": "4",
+      "id": "2kbJtrSgd0Q"
     }
   ],
   "activities_booking": [
@@ -887,5 +919,6 @@
       "id": "1cMt5aI0dCE"
     }
   ],
+  "eventhall_booking": [],
   "$schema": "./node_modules/json-server/schema.json"
 }
