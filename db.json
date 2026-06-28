@@ -36,7 +36,7 @@
         "https://d1p55htxo8z8mf.cloudfront.net/4226016e-b526-49d7-9411-319e283f7519.jpg?format=webp&width=800",
         "https://pix10.agoda.net/hotelImages/34300065/0/d72a22e4e11e9f9943c5a520197831dc.jpeg?ce=3&s=414x232"
       ],
-      "description": "This premium resort in Coorg offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "Set amidst a lush rainforest canopy, this luxurious Coorg retreat offers an immersive nature experience. Guests can unwind with rejuvenating spa therapies, take a dip in the infinity pool overlooking the misty hills, and explore the beautiful outdoors on guided nature walks."
     },
     {
       "id": "r2",
@@ -47,17 +47,13 @@
       "price": 4500,
       "rating": 4.3,
       "reviews": 850,
-      "tags": [
-        "camp fire",
-        "heritage",
-        "garden area"
-      ],
+      "tags": ["heritage", "camp fire", "mountain view"],
       "main_image": "https://cdn.sanity.io/images/ocl5w36p/ihcl_prod/9869ec13a7126e683d725dec695519b12001777b-1280x1570.jpg?w=380&fit=max&auto=format&dpr=2",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEM-CxfJpHtwUsZkcVIrci6rDUNDhhjobbfs0-6F20F_rDpQafN3aACl4&s=10",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cNnkImKs19nweapCPX0ht0cWjuaUqkAhkzulr4kYQ-P_eHYmI1FbES6S&s=10"
       ],
-      "description": "This premium resort in Ooty offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "Step back in time at this colonial-era heritage property nestled in the Nilgiris. Featuring charming vintage architecture, cozy campfires on chilly evenings, and stunning mountain views, it is the perfect escape for those seeking old-world elegance and tranquility."
     },
     {
       "id": "r3",
@@ -68,17 +64,13 @@
       "price": 5250,
       "rating": 4.4,
       "reviews": 2100,
-      "tags": [
-        "wave pool",
-        "zipline",
-        "ayurveda spa"
-      ],
+      "tags": ["spa", "infinity pool", "nature walk"],
       "main_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/25/5d/76/vythiri-village.jpg?w=900&h=500&s=1",
       "images": [
         "https://gos3.ibcdn.com/fd16de946e3f11e78c5b0a4cef95d023.jpg",
         "https://q-xx.bstatic.com/xdata/images/hotel/max500/183270123.jpg?k=74bfbc9a4f9cdd039c4b72e4d72322b0ceb17be7d60b88276e6fa8147ad05459&o="
       ],
-      "description": "This premium resort in Wayanad offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "A magnificent eco-friendly getaway hidden within the lush green forests of Wayanad. This resort seamlessly blends luxury with nature, offering a relaxing infinity pool, authentic Ayurvedic spa treatments for mind and body rejuvenation, and refreshing nature walks."
     },
     {
       "id": "r4",
@@ -99,7 +91,7 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6__vIvR8z1c2FDoSXRWjCzSfZG0U1t7tZ5Igo2TRf5bQsCdb_I-xjnqu&s=10",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqWWdXbKUFCgQBOYNKedxoEW-D3D77xL8uQCuneVZoIyS8anwM46IZtg1&s=10"
       ],
-      "description": "This premium resort in Goa offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "Built on the ramparts of a 16th-century Portuguese fortress, this vibrant beachfront property offers the ultimate Goan holiday. Enjoy panoramic views of the Arabian Sea, thrilling water sports right on the beach, and energetic party areas that capture the true spirit of Goa."
     },
     {
       "id": "r5",
@@ -110,17 +102,13 @@
       "price": 6750,
       "rating": 4.6,
       "reviews": 980,
-      "tags": [
-        "lounge",
-        "swimming pool",
-        "multi-cuisine restaurant"
-      ],
+      "tags": ["spa", "infinity pool", "nature walk"],
       "main_image": "https://silentshoresresort.com/wp-content/uploads/2019/03/Silent-Shores-Superior-Rooms-Gallery1.jpg",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHsOs_Bj962tiiDUV0_3ogpwQYwdypMGVdAGwd9RbhEgRot_TQpu6u01Wg&s=10",
         "https://cf.bstatic.com/xdata/images/hotel/max1024x768/321622604.jpg?k=a10458251cbcce11174c462ab9ab4c20907edf4d585ac9bd63b2bd3b13a002a7&o="
       ],
-      "description": "This premium resort in Mysore offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "A serene lakeside sanctuary located just outside the royal city of Mysore. This expansive resort promises ultimate relaxation with a massive infinity pool, revitalizing spa sessions, and peaceful nature walks through beautifully manicured, lush green landscapes."
     },
     {
       "id": "r6",
@@ -141,7 +129,7 @@
         "https://www.kumarakomlakeresort.in/assets/images/luxury-dining/vembanad-the-seafood-bar/vembanad-the-seafood-bar.jpg",
         "https://media-cdn.tripadvisor.com/media/photo-s/16/97/92/c2/kumarakom-lake-resort.jpg"
       ],
-      "description": "This premium resort in Kerala offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "Experience the magic of God's Own Country at this award-winning luxury retreat on the banks of Lake Vembanad. Stay in traditional Keralan villas, drift along the scenic backwaters in a classic houseboat, and soak in mesmerizing sunsets from the temperature-controlled infinity pool."
     },
     {
       "id": "r7",
@@ -162,7 +150,7 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWGURhs2yj9N-vGbBGvY1DzoDPF8abX3aFHwHGN06IhDEuRZswpqLBRQ&s=10",
         "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/21/06/0d/royal-tented-suite.jpg?w=900&h=500&s=1"
       ],
-      "description": "This premium resort in Chikmagalur offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "Surrounded by acres of fragrant coffee estates, this sophisticated resort is a haven for nature lovers and luxury seekers alike. Guests can enjoy exclusive private pool villas, embark on guided coffee plantation tours, and explore the winding trails of Chikmagalur on a bicycle."
     },
     {
       "id": "r8",
@@ -183,7 +171,7 @@
         "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/d5/86/9d/renovated-adults-heated.jpg?w=900&h=500&s=1",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4VJtP_jkGsWseASe6Q9Jt4Q2BlPSSauxlJKHQejfOHQ&s"
       ],
-      "description": "This premium resort in Munnar offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "True to its name, this elevated retreat offers breathtaking, unobstructed valley views from every corner of the property. Featuring a stunning rooftop pool, world-class modern amenities, and a private helipad, it redefines high-altitude luxury in the misty hills of Munnar."
     },
     {
       "id": "r9",
@@ -194,16 +182,12 @@
       "price": 9750,
       "rating": 4.1,
       "reviews": 730,
-      "tags": [
-        "lake view",
-        "boating",
-        "camp fire"
-      ],
+      "tags": ["heritage", "camp fire", "mountain view"],
       "main_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqevlKnjw1VkyFS8InfrLUj7zx8EY2t9bSfHVaB_5UsYGGeV5oXbuOFCQ&s=10",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPDwas8B9AGIFsZ3_Td7FzhXrqVoYu8qbCq_36RbtrrhTR64IgvD2HWw&s=10"
       ],
-      "description": "This premium resort in Kodaikanal offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "A magnificent heritage property offering a perfect blend of colonial charm and natural beauty. Guests can cozy up by the campfire under the starry sky, take in the serene mountain views from their private balconies, and experience the timeless elegance of Kodaikanal."
     },
     {
       "id": "r10",
@@ -224,7 +208,7 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS746L51nPAXZlgdk6AtT_PqyilXdl1H5TZADmy_DopBrV9R3jWg8mja72m&s=10",
         "https://img.easemytrip.com/roomimages/EMTHotel-525246/8/37270724/372707_2.jpg"
       ],
-      "description": "This premium resort in Pondicherry offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "Celebrating the unique cross-cultural history of Pondicherry, this premium resort features exquisite French architecture and exclusive access to a pristine private beach. With expansive outdoor party areas and luxurious sea-facing villas, it is an idyllic coastal getaway."
     },
     {
       "id": "r11",
@@ -245,7 +229,7 @@
         "https://cf.bstatic.com/xdata/images/hotel/max1024x768/407617043.jpg?k=4b4f195bab585ff06a9c5d9f5feae6bc6227f83b9129a3bfc33320d960e4629a&o=",
         "https://images.trvl-media.com/lodging/1000000/530000/526400/526331/9f98c9fd.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill"
       ],
-      "description": "This premium resort in Jaipur offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "Live like royalty at this former residence of the Maharaja of Jaipur. This architectural masterpiece features opulent royal heritage suites, the historic Polo Bar, and the spectacular Peacock Garden, delivering an unforgettable and authentic taste of Rajputana grandeur."
     },
     {
       "id": "r12",
@@ -256,17 +240,13 @@
       "price": 12000,
       "rating": 4.4,
       "reviews": 960,
-      "tags": [
-        "castle architecture",
-        "mountain view",
-        "fire place"
-      ],
+      "tags": ["heritage", "camp fire", "mountain view"],
       "main_image": "https://gos3.ibcdn.com/a4e73d0cbd1111eb81290242ac110002.jpg",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKL7-0UTPehPQCIHZDCt9JGo9NQQe3nXJ-L53sBi-z17_ohP2FA2pwy0ZR&s=10",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8ap6HOpTeFVEmaJrvVQ_NtW1Yk-6-tE3tmCLECGY2ecyYj1tLomiYyyE&s=10"
       ],
-      "description": "This premium resort in Manali offers spacious accommodation, scenic views, modern amenities, recreational facilities, fine dining, and a relaxing atmosphere for families, couples, and corporate travelers. Guests can enjoy curated experiences, local attractions, wellness activities, and exceptional hospitality throughout their stay."
+      "description": "Built in the style of a grand Victorian castle, this exquisite resort offers a fairy-tale escape in the Himalayas. With antique furnishings, gorgeous heritage architecture, roaring campfires, and spectacular snow-capped mountain views, it is a warm and opulent sanctuary."
     }
   ],
   "activities": [

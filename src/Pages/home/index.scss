@@ -1,0 +1,473 @@
+.landingmain {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f6f2;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.45)
+      );
+    }
+  }
+
+  .brandlogo {
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+  z-index: 10;
+
+  h1 {
+    font-size: 70px;
+    color: white;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+  }
+
+  p {
+    color: #d4af37;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 12px;
+    text-transform: uppercase;
+  }
+}
+
+  .offers {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(90deg, #111, #1e1e1e, #111);
+    overflow: hidden;
+    position: relative;
+    border-top: 2px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      white-space: nowrap;
+      color: #d4af37;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0;
+      animation: marquee 12s linear infinite;
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translate(100vw, -50%);
+    }
+    100% {
+      transform: translate(-100%, -50%);
+    }
+  }
+
+  .about {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 30px;
+    text-align: center;
+
+    h1 {
+      font-size: 52px;
+      color: #111;
+      margin-bottom: 25px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 20px;
+      color: #666;
+      line-height: 1.8;
+    }
+  }
+
+  .featuresdetails {
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .fdcard1,
+    .fdcard2,
+    .fdcard3 {
+      background: white;
+      flex: 1;
+      min-width: 320px;
+      max-width: 380px;
+      padding: 35px 28px;
+      border-radius: 20px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+
+      i:first-child {
+        font-size: 50px;
+        color: #d4af37;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #111;
+      }
+
+      p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+
+      .fdcard1-1,
+      .fdcard1-2,
+      .fdcard1-3 {
+        line-height: 2.2;
+        color: #444;
+
+        i {
+          color: #d4af37;
+          margin-right: 8px;
+        }
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 28px;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #d4af37, #b8860b);
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+        }
+      }
+    }
+  }
+
+  .vipfeatures {
+    width: 92%;
+    margin: 100px auto;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #0f0f0f, #181818, #111);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+
+    h2 {
+      grid-column: 1 / -1;
+      text-align: center;
+      color: white;
+      font-size: 42px;
+      margin-bottom: 40px;
+    }
+
+    .smallcard1,
+    .smallcard2,
+    .smallcard3,
+    .smallcard4 {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(14px);
+      border-radius: 24px;
+      padding: 30px 24px;
+      border: 1px solid rgba(212, 175, 55, 0.12);
+      transition: all 0.4s ease;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+
+      h3 {
+        color: white;
+        font-size: 24px;
+      }
+
+      p {
+        color: #b5b5b5;
+        line-height: 1.8;
+        margin: 15px 0;
+      }
+
+      h4 {
+        color: #d4af37;
+        margin-top: 20px;
+      }
+
+      .tags {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+
+        span {
+          padding: 8px 14px;
+          border-radius: 30px;
+          font-size: 13px;
+        }
+      }
+
+      button {
+        margin-top: 25px;
+        width: 100%;
+        padding: 14px;
+        border-radius: 14px;
+        border: 1px solid #d4af37;
+        background: transparent;
+        color: #d4af37;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+
+    .smallcard1 .tags span {
+      background: rgba(212, 175, 55, 0.12);
+      color: #d4af37;
+    }
+
+    .smallcard2 .tags span {
+      background: rgba(255, 107, 129, 0.12);
+      color: #ff8da1;
+    }
+
+    .smallcard3 .tags span {
+      background: rgba(46, 204, 113, 0.12);
+      color: #67e8a5;
+    }
+
+    .smallcard4 {
+      background: linear-gradient(
+        135deg,
+        rgba(70, 35, 120, 0.4),
+        rgba(20, 20, 20, 0.8)
+      );
+
+      .tags span {
+        background: rgba(155, 89, 182, 0.16);
+        color: #d8a9ff;
+      }
+
+      button {
+        background: linear-gradient(135deg, #6c3dbf, #d4af37);
+        color: white;
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .landingmain .vipfeatures {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .landingmain {
+    img {
+      height: 50vh;
+    }
+
+    .about h1 {
+      font-size: 28px;
+    }
+
+    .featuresdetails {
+      flex-direction: column;
+    }
+
+    .vipfeatures {
+      grid-template-columns: 1fr;
+      padding: 40px 20px;
+
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.whygrandoria {
+  width: 92%;
+  margin: 100px auto;
+  text-align: center;
+
+  h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #111;
+  }
+
+  .subtitle {
+    max-width: 900px;
+    margin: auto;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .whycontent {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .whybox {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 22px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    border: 1px solid rgba(212,175,55,0.15);
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(212,175,55,0.15);
+    }
+
+    i {
+      font-size: 42px;
+      color: #d4af37;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.7;
+    }
+  }
+}
+
+.gallerysection {
+  width: 92%;
+  margin: 120px auto;
+  text-align: center;
+
+  h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: #111;
+  }
+
+  .gallerygrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+
+    img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+      transition: 0.4s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+}
+
+.reviews {
+  width: 92%;
+  margin: 120px auto;
+  text-align: center;
+
+  h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: #111;
+  }
+
+  .reviewgrid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    img {
+      width: 320px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      border: 1px solid rgba(212,175,55,0.2);
+      transition: 0.4s ease;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 40px rgba(212,175,55,0.2);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .whygrandoria .whycontent,
+  .gallerysection .gallerygrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .whygrandoria {
+    .whycontent {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .gallerysection {
+    .gallerygrid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .reviews {
+    .reviewgrid img {
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+    }
+  }
+}

@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react'
-// import useUserId from '../../hooks/userId/useUserId'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
-import auth from '../../firebase'
+import auth from '../../Authentication/firebase'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import './style.scss'
 
 function index() {
     const [userInput, setUserInput] = useState({ name: "", mail: "", password: "" })
-    // const { id, regenerateId } = useUserId(6)
     const navigate = useNavigate()
 
     function handleChange(e) {
@@ -20,9 +18,7 @@ function index() {
         e.preventDefault()
         try {
             await createUserWithEmailAndPassword(auth, userInput.mail, userInput.password)
-            // const newUserId = regenerateId();
             await axios.post('http://localhost:3000/profiles', {
-                // "user_id": newUserId,
                 "user_name": userInput.name,
                 "user_mail": userInput.mail
 
@@ -33,13 +29,6 @@ function index() {
             alert(error)
         }
     }
-
-    // useEffect(()=>{
-    //     axios.get(`http://localhost:3000/data/`)
-    //     .then((res)=>console.log(res.data))
-    // })
-
-
 
     return (
         <div className="signup-container">
