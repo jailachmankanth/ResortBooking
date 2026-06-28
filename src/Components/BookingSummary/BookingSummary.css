@@ -1,0 +1,44 @@
+.booking-summary {
+  width: 350px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-summary h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1e3a8a;
+}
+
+.summary-row,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.summary-total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #1d4ed8;
+}

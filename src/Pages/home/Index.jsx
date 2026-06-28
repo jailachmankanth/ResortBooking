@@ -32,7 +32,7 @@ const Index = () => {
             <br />
             <i className="bi bi-check2"></i>World-Class Hospitality
           </div>
-          <Link to={'/signup'}><button>Explore Resorts</button></Link>
+          <Link to={'/resorts'}><button>Explore Resorts</button></Link>
         </div>
         <div className='fdcard2'>
           <i className="bi bi-joystick"></i>
@@ -46,7 +46,7 @@ const Index = () => {
             <br />
             <i className="bi bi-check2"></i>Premium Experience Guaranteed
           </div>
-          <Link to={'/signup'}><button>Explore Activities</button></Link>
+          <Link to={'/activities'}><button>Explore Activities</button></Link>
         </div>
         <div className='fdcard3'>
           <i className="bi bi-boombox"></i>
@@ -60,7 +60,7 @@ const Index = () => {
             <br />
             <i className="bi bi-check2"></i>Crafted for Memorable Moments
           </div>
-          <Link to={'/signup'}><button>Explore Venues</button></Link>
+          <Link to={'/eventhalls'}><button>Explore Venues</button></Link>
         </div>
       </section>
       <section className='vipfeatures'>

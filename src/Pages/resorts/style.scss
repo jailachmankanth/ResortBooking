@@ -14,13 +14,13 @@
     margin-bottom: 40px;
 
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
       color: #1f2937;
       margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.05rem;
       color: #6b7280;
     }
   }
@@ -42,13 +42,13 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 
   h3 {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
 
   .search-box {
     width: 100%;
-    height: 50px;
+    height: 40px;
     border: 1px solid #ddd;
     border-radius: 12px;
     display: flex;
@@ -71,14 +71,14 @@
 
     label {
       display: block;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       font-weight: 600;
       color: #374151;
     }
 
     select {
       width: 100%;
-      height: 45px;
+      height: 40px;
       border-radius: 10px;
       border: 1px solid #ddd;
       padding: 0 12px;
