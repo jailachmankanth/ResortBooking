@@ -11,6 +11,8 @@ import ResortDetails from './Pages/ResortDetails'
 import EventHall from './Pages/eventHalls'
 import EventHallDetails from './Pages/eventHallDetails'
 import Profile from './Pages/Profile'
+import Activity from './Pages/Activity'
+import Profile from './Pages/Profile';
 import Cart from './Pages/Cart/Cart'
 import Edit from './Pages/Edit/Edit'
 import Success from './Pages/Sucess/Sucess'
@@ -52,6 +54,9 @@ const App = () => {
         <Route path='/eventhall/:id' element={
           <PrivateRoute>
             <EventHallDetails />
+        <Route path='/activities' element={
+          <PrivateRoute>
+            <Activity />
           </PrivateRoute>
         } />
         <Route path='/cart' element={
@@ -67,6 +72,11 @@ const App = () => {
         <Route path='/success' element={
           <PrivateRoute>
             <Success />
+          </PrivateRoute>
+        }/>
+         <Route path='/profile/:id' element={
+          <PrivateRoute>
+            <Profile />
           </PrivateRoute>
         }/>
         <Route path='/contact' element={<Contact/>}/>
