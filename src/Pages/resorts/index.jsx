@@ -227,10 +227,6 @@ function Resorts() {
                                                 alt={item.name}
                                             />
 
-                                            <button className="wishlist">
-                                                <FaHeart />
-                                            </button>
-
                                             <div className="rating-badge">
                                                 <FaStar />
                                                 {item.rating}/5.0 ({item.reviews})

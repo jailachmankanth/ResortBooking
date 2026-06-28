@@ -4,7 +4,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 
 const ResortDetails = () => {
-  const [resorts, setResorts] = useState([]);
+  const [eventHall, setEventHall] = useState([]);
   const [loading, setLoading] = useState(true);
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
@@ -14,12 +14,12 @@ const ResortDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/resorts?id=${id}`)
+      .get(`http://localhost:3000/eventHalls?id=${id}`)
       .then((response) => {
 
-        const resortsArray = Object.values(response.data);
+        const eventHallArray = Object.values(response.data);
 
-        setResorts(resortsArray);
+        setEventHall(eventHallArray);
         setLoading(false);
       })
       .catch((error) => {
@@ -38,13 +38,13 @@ const ResortDetails = () => {
 
     const cartData = {
       user_id: userId,
-      resort_id: resort.id,
+      eventHall_id: resort.id,
       check_in: checkIn,
       check_out: checkOut,
       guests: guests,
     };
 
-    axios.post("http://localhost:3000/resort_carts", cartData)
+    axios.post("http://localhost:3000/eventHalls_carts", cartData)
       .then(() => {
         alert("Cart added successfully");
         setCheckIn("");
@@ -60,13 +60,13 @@ const ResortDetails = () => {
     return <h2>Loading...</h2>;
   }
 
-  if (resorts.length === 0) {
+  if (eventHall.length === 0) {
     return <h2>No Resort Found</h2>;
   }
 
   return (
     <div className="resort-list">
-      {resorts.map((resort) => (
+      {eventHall.map((resort) => (
         <div className="resort-details" key={resort.id}>
           <div className="top-section">
             <div className="gallery">
@@ -92,7 +92,7 @@ const ResortDetails = () => {
             {/* card sections for reserve */}
             <div className="booking-card">
               <h2>₹{resort.price}
-                <span> / night</span>
+                <span> / day</span>
               </h2>
               <label>Check In</label>
               <input
@@ -107,15 +107,7 @@ const ResortDetails = () => {
                 onChange={(e) => setCheckOut(e.target.value)}
               />
               <label>Guests</label>
-              <select
-                value={guests}
-                onChange={(e) => setGuests(e.target.value)}
-              >
-                <option value="1">1 Guest</option>
-                <option value="2">2 Guests</option>
-                <option value="3">3 Guests</option>
-                <option value="4">4 Guests</option>
-              </select>
+              <input type="number" placeholder="Enter number of guests" onChange={(e) => setGuests(e.target.value)} required/>
               <button onClick={() => handleBooking(resort)}>Reserve Now</button>
               <p>You won't charged </p>
             </div>
@@ -129,11 +121,6 @@ const ResortDetails = () => {
               <span>👤 {resort.capacity} Guests</span>
             </div>
             <p>{resort.description}</p>
-            <div className="tags">
-              {resort.tags.map((tag, index) => (
-                <span key={index}>{tag}</span>
-              ))}
-            </div>
           </div>
         </div>
       ))}
