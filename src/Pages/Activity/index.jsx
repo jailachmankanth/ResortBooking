@@ -35,14 +35,14 @@ const Activity = () => {
 
     const bookingData = {
       user_id: user_id,
-      activityId: activity.id,
+      activity_id: activity.id,
       activityName: activity.name,
       date: activityDate,
       guests
     };
 
     axios
-      .post("http://localhost:3000/activities_carts", bookingData)
+      .post("http://localhost:3000/activity_carts", bookingData)
       .then(() => {
         alert("Activity Booked Successfully!");
         setActivityDate("");

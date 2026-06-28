@@ -75,7 +75,7 @@ const Index = () => {
             <span>Elite Travel</span>
           </div>
           <h4>Starting From ₹4,999/day</h4>
-          <Link to={'/signup'}><button>Explore Cars</button></Link>
+          <Link to={'/contact'}><button>Explore Cars</button></Link>
         </div>
         <div className='smallcard2'>
           <h3>Private Dining</h3>
@@ -87,7 +87,7 @@ const Index = () => {
             <span>Luxury Ambience</span>
           </div>
           <h4>Starting From ₹2,999/person</h4>
-          <Link to={'/signup'}><button>Reserve Table</button></Link>
+          <Link to={'/contact'}><button>Reserve Table</button></Link>
         </div>
         <div className='smallcard3'>
           <h3>Spa & Wellness</h3>
@@ -99,7 +99,7 @@ const Index = () => {
             <span>Premium Care</span>
           </div>
           <h4>Starting From ₹3,499/session</h4>
-          <Link to={'/signup'}><button>Book Spa</button></Link>
+          <Link to={'/contact'}><button>Book Spa</button></Link>
         </div>
         <div className='smallcard4'>
           <h3>VIP Experiences</h3>
@@ -111,7 +111,7 @@ const Index = () => {
             <span>Priority Service</span>
           </div>
           <h4>Starting From ₹14,999/package</h4>
-          <Link to={'/signup'}><button>Unlock VIP Access</button></Link>
+          <Link to={'/contact'}><button>Unlock VIP Access</button></Link>
         </div>
       </section>
       <section className='whygrandoria'>
@@ -162,9 +162,9 @@ const Index = () => {
         <h2>What Our Guests Say</h2>
 
         <div className='reviewgrid'>
-          <img src="/reviews/review1.png" alt="review1" />
-          <img src="/reviews/review2.png" alt="review2" />
-          <img src="/reviews/review3.png" alt="review3" />
+          <img src="../../../public/landing-p-img/review-1.png" alt="review1" />
+          <img src="../../../public/landing-p-img/review-2.png" alt="review2" />
+          <img src="../../../public/landing-p-img/review-3.png" alt="review3" />
         </div>
       </section>
     </div>
