@@ -22,9 +22,9 @@ import "./Footer.scss";
 
 const exploreLinks = [
   { label: "Home", href: "/" },
-  { label: "Rooms & Suites", href: "/rooms" },
-  { label: "Dining", href: "/dining" },
-  { label: "Experiences", href: "/experiences" },
+  { label: "Rooms & Suites", href: "/resorts" },
+  { label: "Activities", href: "/activities" },
+  { label: "Event Halls", href: "/eventhalls" },
   { label: "Gallery", href: "/gallery" },
 ];
 

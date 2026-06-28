@@ -38,13 +38,13 @@ const ResortDetails = () => {
 
     const cartData = {
       user_id: userId,
-      eventHall_id: resort.id,
+      eventhall_id: resort.id,
       check_in: checkIn,
       check_out: checkOut,
       guests: guests,
     };
 
-    axios.post("http://localhost:3000/eventHalls_carts", cartData)
+    axios.post("http://localhost:3000/eventhall_carts", cartData)
       .then(() => {
         alert("Cart added successfully");
         setCheckIn("");

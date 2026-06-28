@@ -9,21 +9,26 @@ const Profile = () => {
   const { id } = useParams()
   const navigate = useNavigate()
 
-  const [profileDetails, setProfileDetails]       = useState([])
-  const [bookingDetails, setBookingDetails]       = useState([])
-  const [resortDetails, setResortDetails]         = useState([])
-  const [bookedResorts, setBookedResorts]         = useState([])
-  const [activityDetails, setActivityDetails]     = useState([])
-  const [activityBookings, setActivityBookings]   = useState([])
-  const [bookedActivities, setBookedActivities]   = useState([])
-  const [eventHallDetails, setEventHallDetails]   = useState([])
+  const [profileDetails, setProfileDetails] = useState([])
+  const [bookingDetails, setBookingDetails] = useState([])
+  const [resortDetails, setResortDetails] = useState([])
+  const [bookedResorts, setBookedResorts] = useState([])
+  const [activityDetails, setActivityDetails] = useState([])
+  const [activityBookings, setActivityBookings] = useState([])
+  const [bookedActivities, setBookedActivities] = useState([])
+  const [eventHallDetails, setEventHallDetails] = useState([])
   const [eventHallBookings, setEventHallBookings] = useState([])
-  const [bookedEventHalls, setBookedEventHalls]   = useState([])
-  const [activeTab, setActiveTab]                 = useState('resorts')
-  const [loading, setLoading]                     = useState(true)
-  const [error, setError]                         = useState(null)
-  const [showConfirm, setShowConfirm]             = useState(false)
-  const [pendingRemove, setPendingRemove]         = useState(null)
+  const [bookedEventHalls, setBookedEventHalls] = useState([])
+  const [activeTab, setActiveTab] = useState('resorts')
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+  const [showConfirm, setShowConfirm] = useState(false)
+  const [pendingRemove, setPendingRemove] = useState(null)
+
+  useEffect(() => {
+    console.log(bookedActivities);
+
+  }, [bookedActivities])
 
   useEffect(() => {
     const fetchAll = async () => {
@@ -34,9 +39,9 @@ const Profile = () => {
           axios.get(`${BASE_URL}/resort_bookings?user_id=${id}`),
           axios.get(`${BASE_URL}/resorts`),
           axios.get(`${BASE_URL}/activities`),
-          axios.get(`${BASE_URL}/activities_booking?user_id=${id}`),
+          axios.get(`${BASE_URL}/activity_bookings?user_id=${id}`),
           axios.get(`${BASE_URL}/eventHalls`),
-          axios.get(`${BASE_URL}/eventhall_booking?user_id=${id}`),
+          axios.get(`${BASE_URL}/eventhall_bookings?user_id=${id}`),
         ])
         setProfileDetails(profileRes.data)
         setBookingDetails(bookingRes.data)
@@ -66,7 +71,7 @@ const Profile = () => {
 
   useEffect(() => {
     if (eventHallBookings.length === 0 || eventHallDetails.length === 0) return
-    setBookedEventHalls(eventHallBookings.map(b => ({ ...b, hall: eventHallDetails.find(h => h.id === b.hall_id) })))
+    setBookedEventHalls(eventHallBookings.map(b => ({ ...b, hall: eventHallDetails.find(h => h.id === b.eventhall_id) })))
   }, [eventHallBookings, eventHallDetails])
 
   const capitalizeName = (name) => {
@@ -89,6 +94,11 @@ const Profile = () => {
     return new Date(checkOut) >= new Date() ? 'Upcoming' : 'Completed'
   }
 
+  const activityStatus = (date, status) => {
+    if (status === 'cancelled') return 'Cancelled'
+    return new Date(date) >= new Date() ? 'Upcoming' : 'Completed'
+  }
+
   const handleLogout = () => {
     localStorage.removeItem('userId')
     localStorage.removeItem('accessToken')
@@ -104,8 +114,8 @@ const Profile = () => {
     const endpointMap = { resort: 'resort_bookings', activity: 'activities_booking', eventhall: 'eventhall_booking' }
     try {
       await axios.delete(`${BASE_URL}/${endpointMap[pendingRemove.type]}/${pendingRemove.id}`)
-      if (pendingRemove.type === 'resort')    setBookedResorts(prev => prev.filter(b => b.id !== pendingRemove.id))
-      if (pendingRemove.type === 'activity')  setBookedActivities(prev => prev.filter(b => b.id !== pendingRemove.id))
+      if (pendingRemove.type === 'resort') setBookedResorts(prev => prev.filter(b => b.id !== pendingRemove.id))
+      if (pendingRemove.type === 'activity') setBookedActivities(prev => prev.filter(b => b.id !== pendingRemove.id))
       if (pendingRemove.type === 'eventhall') setBookedEventHalls(prev => prev.filter(b => b.id !== pendingRemove.id))
     } catch {
       alert('Failed to remove booking. Please try again.')
@@ -120,42 +130,75 @@ const Profile = () => {
     setPendingRemove(null)
   }
 
-  const BookingCard = ({ booking, type, imageSrc, name, location, checkIn, checkOut, amount, status }) => (
-    <div className="reservation-card">
-      <div className="card-image-wrap">
-        <img src={imageSrc || '/placeholder-resort.jpg'} alt={name} />
-        <span className={`status-badge status-badge--${status.toLowerCase()}`}>{status}</span>
+    const BookingCard = ({ booking, type, imageSrc, name, location, checkIn, checkOut, amount, status }) => (
+      <div className="reservation-card">
+        <div className="card-image-wrap">
+          <img src={imageSrc || '/placeholder-resort.jpg'} alt={name} />
+          <span className={`status-badge status-badge--${status.toLowerCase()}`}>{status}</span>
+        </div>
+        <div className="card-details">
+          <div className="card-top-row">
+            <h2 className="resort-name">{name || 'N/A'}</h2>
+            <p className="resort-location">
+              <i className="bi bi-geo-alt"></i>
+              {location || 'Location'}
+            </p>
+          </div>
+          <div className="date-row">
+            <div className="date-box">
+              <span className="date-label">Check-in</span>
+              <span className="date-value">{formatDate(checkIn)}</span>
+            </div>
+            <div className="date-box">
+              <span className="date-label">Check-out</span>
+              <span className="date-value">{formatDate(checkOut)}</span>
+            </div>
+          </div>
+          <div className="card-bottom-row">
+            <div className="amount-block">
+              <span className="amount-label">Total Amount</span>
+              <span className="amount-value">{formatAmount(amount)}</span>
+            </div>
+            <button className="action-btn action-btn--remove" onClick={() => askRemove(booking.id, type)}>
+              <i className="bi bi-trash3"></i> Remove
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="card-details">
-        <div className="card-top-row">
-          <h2 className="resort-name">{name || 'N/A'}</h2>
-          <p className="resort-location">
-            <i className="bi bi-geo-alt"></i>
-            {location || 'Location'}
-          </p>
+    )
+
+    const ActivityCard = ({ booking, type, imageSrc, name, location, date, amount, status }) => (
+      <div className="reservation-card">
+        <div className="card-image-wrap">
+          <img src={imageSrc || '/placeholder-resort.jpg'} alt={name} />
+          <span className={`status-badge status-badge--${status.toLowerCase()}`}>{status}</span>
         </div>
-        <div className="date-row">
-          <div className="date-box">
-            <span className="date-label">Check-in</span>
-            <span className="date-value">{formatDate(checkIn)}</span>
+        <div className="card-details">
+          <div className="card-top-row">
+            <h2 className="resort-name">{name || 'N/A'}</h2>
+            <p className="resort-location">
+              <i className="bi bi-geo-alt"></i>
+              {location || 'Location'}
+            </p>
           </div>
-          <div className="date-box">
-            <span className="date-label">Check-out</span>
-            <span className="date-value">{formatDate(checkOut)}</span>
+          <div className="date-row">
+            <div className="date-box">
+              <span className="date-label">Date</span>
+              <span className="date-value">{formatDate(date)}</span>
+            </div>
           </div>
-        </div>
-        <div className="card-bottom-row">
-          <div className="amount-block">
-            <span className="amount-label">Total Amount</span>
-            <span className="amount-value">{formatAmount(amount)}</span>
+          <div className="card-bottom-row">
+            <div className="amount-block">
+              <span className="amount-label">Total Amount</span>
+              <span className="amount-value">{formatAmount(amount)}</span>
+            </div>
+            <button className="action-btn action-btn--remove" onClick={() => askRemove(booking.id, type)}>
+              <i className="bi bi-trash3"></i> Remove
+            </button>
           </div>
-          <button className="action-btn action-btn--remove" onClick={() => askRemove(booking.id, type)}>
-            <i className="bi bi-trash3"></i> Remove
-          </button>
         </div>
       </div>
-    </div>
-  )
+    )
 
   const EmptyState = ({ label, route }) => (
     <div className="no-reservations">
@@ -215,7 +258,7 @@ const Profile = () => {
         <div className="sidebar-divider"></div>
         <nav className="sidebar-nav">
           <button className={`sidebar-nav-item ${activeTab === 'resorts' ? 'active' : ''}`} onClick={() => setActiveTab('resorts')}>
-            <i className="bi bi-houses-fill"></i>
+            <i class="bi bi-houses"></i>
             <span>Resorts</span>
           </button>
           <button className={`sidebar-nav-item ${activeTab === 'activities' ? 'active' : ''}`} onClick={() => setActiveTab('activities')}>
@@ -244,56 +287,55 @@ const Profile = () => {
 
           {activeTab === 'resorts' && (
             bookedResorts.length === 0 ? <EmptyState label="Resorts" route="/resorts" /> :
-            bookedResorts.map(booking => (
-              <BookingCard
-                key={booking.id}
-                booking={booking}
-                type="resort"
-                imageSrc={booking.resort?.main_image}
-                name={booking.resort?.name}
-                location={booking.resort?.location}
-                checkIn={booking.check_in}
-                checkOut={booking.check_out}
-                amount={booking.resort?.price}
-                status={getStatus(booking.check_out, booking.status)}
-              />
-            ))
+              bookedResorts.map(booking => (
+                <BookingCard
+                  key={booking.id}
+                  booking={booking}
+                  type="resort"
+                  imageSrc={booking.resort?.main_image}
+                  name={booking.resort?.name}
+                  location={booking.resort?.location}
+                  checkIn={booking.check_in}
+                  checkOut={booking.check_out}
+                  amount={booking.resort?.price}
+                  status={getStatus(booking.check_out, booking.status)}
+                />
+              ))
           )}
 
           {activeTab === 'activities' && (
             bookedActivities.length === 0 ? <EmptyState label="Activities" route="/activities" /> :
-            bookedActivities.map(booking => (
-              <BookingCard
-                key={booking.id}
-                booking={booking}
-                type="activity"
-                imageSrc={booking.activity?.image}
-                name={booking.activity?.name}
-                location={booking.activity?.location}
-                checkIn={booking.check_in}
-                checkOut={booking.check_out}
-                amount={booking.activity?.price}
-                status={getStatus(booking.check_out, booking.status)}
-              />
-            ))
+              bookedActivities.map(booking => (
+                <ActivityCard
+                  key={booking.id}
+                  booking={booking}
+                  type="activity"
+                  imageSrc={booking.activity?.main_image}
+                  name={booking.activity?.name}
+                  location={booking.activity?.location}
+                  date={booking.date}
+                  amount={booking.activity?.price}
+                  status={activityStatus(booking.date, booking.status)}
+                />
+              ))
           )}
 
           {activeTab === 'eventhalls' && (
             bookedEventHalls.length === 0 ? <EmptyState label="Event Halls" route="/eventhalls" /> :
-            bookedEventHalls.map(booking => (
-              <BookingCard
-                key={booking.id}
-                booking={booking}
-                type="eventhall"
-                imageSrc={booking.hall?.image}
-                name={booking.hall?.name}
-                location={booking.hall?.location}
-                checkIn={booking.check_in}
-                checkOut={booking.check_out}
-                amount={booking.hall?.price}
-                status={getStatus(booking.check_out, booking.status)}
-              />
-            ))
+              bookedEventHalls.map(booking => (
+                <BookingCard
+                  key={booking.id}
+                  booking={booking}
+                  type="eventhall"
+                  imageSrc={booking.hall?.main_image}
+                  name={booking.hall?.name}
+                  location={booking.hall?.location}
+                  checkIn={booking.check_in}
+                  checkOut={booking.check_out}
+                  amount={booking.hall?.price}
+                  status={getStatus(booking.check_out, booking.status)}
+                />
+              ))
           )}
 
         </section>
