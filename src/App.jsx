@@ -57,6 +57,11 @@ const App = () => {
             <Success />
           </PrivateRoute>
         }/>
+         <Route path='/profile/:id' element={
+          <PrivateRoute>
+            <Profile />
+          </PrivateRoute>
+        }/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <Footer/>
