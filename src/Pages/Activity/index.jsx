@@ -27,6 +27,10 @@ const Activity = () => {
       });
   }, []);
 
+  useEffect(()=>{
+    console.log(activities); 
+  }, [activities])
+
   const handleBooking = (activity) => {
     if (!activityDate) {
       alert("Please Select Activity Date");
