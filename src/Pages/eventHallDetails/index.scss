@@ -1,0 +1,255 @@
+// =====================================================
+// Aura Resorts — Resort Details Page Styles
+// Mobile-first, fluid typography via clamp()
+// Breakpoints: 480px / 768px / 1024px / 1280px
+// =====================================================
+
+$color-primary: #0f4c3a;
+$color-primary-light: #e6f2ee;
+$color-text: #1a1a1a;
+$color-text-muted: #6b7280;
+$color-border: #e5e7eb;
+$color-bg: #f5f7f6;
+$color-white: #ffffff;
+
+$radius-sm: 8px;
+$radius-md: 14px;
+$radius-lg: 18px;
+
+@mixin breakpoint($name) {
+  @if $name == sm { @media (min-width: 480px) { @content; } }
+  @else if $name == md { @media (min-width: 768px) { @content; } }
+  @else if $name == lg { @media (min-width: 1024px) { @content; } }
+  @else if $name == xl { @media (min-width: 1280px) { @content; } }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.resort-list {
+  width: 100%;
+  background: $color-bg;
+  padding: clamp(16px, 4vw, 32px) clamp(16px, 5vw, 48px) clamp(40px, 6vw, 64px);
+}
+
+// -------------------------------------------------
+// Resort Details Card
+// -------------------------------------------------
+.resort-details {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto clamp(24px, 4vw, 40px);
+  background: $color-white;
+  border-radius: $radius-lg;
+  border: 1px solid $color-border;
+  overflow: hidden;
+
+  // -------------------------------------------------
+  // Top Section: gallery + booking card
+  // -------------------------------------------------
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(16px, 2.5vw, 24px);
+    padding: clamp(16px, 3vw, 24px);
+
+    @include breakpoint(lg) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  // -------------------------------------------------
+  // Gallery
+  // -------------------------------------------------
+  .gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+      height: clamp(280px, 40vw, 460px);
+    }
+
+    .main-image {
+      width: 100%;
+      height: clamp(220px, 45vw, 320px);
+      border-radius: $radius-md;
+      overflow: hidden;
+
+      @include breakpoint(md) {
+        height: 100%;
+        flex: 2;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .side-images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+      @include breakpoint(md) {
+        flex: 1;
+        grid-template-columns: 1fr;
+        height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: clamp(100px, 20vw, 220px);
+        object-fit: cover;
+        border-radius: $radius-md;
+        display: block;
+
+        @include breakpoint(md) {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  // -------------------------------------------------
+  // Booking Card
+  // -------------------------------------------------
+  .booking-card {
+    width: 100%;
+    background: $color-white;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    padding: clamp(16px, 2.5vw, 22px);
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(lg) {
+      width: clamp(280px, 28vw, 340px);
+      flex-shrink: 0;
+      position: sticky;
+      top: 24px;
+    }
+
+    h2 {
+      font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+      font-weight: 800;
+      color: $color-text;
+      margin: 0 0 16px 0;
+
+      span {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: $color-text-muted;
+        margin-left: 4px;
+      }
+    }
+
+    label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $color-text-muted;
+      margin-bottom: 6px;
+      margin-top: 12px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid $color-border;
+      border-radius: $radius-sm;
+      font-size: clamp(0.85rem, 1.4vw, 0.95rem);
+      color: $color-text;
+      background: $color-white;
+
+      &:focus {
+        outline: none;
+        border-color: $color-primary;
+      }
+    }
+
+    button {
+      margin-top: 18px;
+      width: 100%;
+      background: $color-primary;
+      color: $color-white;
+      border: none;
+      border-radius: $radius-sm;
+      padding: 13px;
+      font-size: clamp(0.9rem, 1.5vw, 1rem);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      transition: background 0.15s ease;
+
+      &:hover {
+        background: darken($color-primary, 6%);
+      }
+    }
+
+    p {
+      margin: 10px 0 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: $color-text-muted;
+    }
+  }
+
+  // -------------------------------------------------
+  // Details Section
+  // -------------------------------------------------
+  .details {
+    padding: clamp(16px, 3vw, 24px);
+    border-top: 1px solid $color-border;
+
+    h1 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      color: $color-text;
+      margin: 0 0 14px 0;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(10px, 2vw, 18px);
+      margin-bottom: 16px;
+
+      span {
+        font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+        color: $color-text-muted;
+        background: $color-primary-light;
+        padding: 6px 14px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+    }
+
+    p {
+      font-size: clamp(0.9rem, 1.6vw, 1rem);
+      color: $color-text-muted;
+      line-height: 1.65;
+      max-width: 900px;
+      margin: 0;
+    }
+  }
+}

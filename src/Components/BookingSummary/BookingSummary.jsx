@@ -14,7 +14,7 @@ const BookingSummary = ({ items = [] }) => {
   const grandTotal = subtotal + tax;
 
   const handleCheckout = () => {
-    navigate("/sucess", {
+    navigate("/success", {
       state: {
         items,
         subtotal,
@@ -49,12 +49,12 @@ const BookingSummary = ({ items = [] }) => {
         <span>Total</span>
         <span>₹{grandTotal.toFixed(2)}</span>
       </div>
-
+      
       <button
-        className="checkout-btn"
-        onClick={handleCheckout}
-      >
-        Proceed to Checkout
+          className="checkout-btn"
+          onClick={handleCheckout}
+        >
+          Proceed to Checkout
       </button>
     </div>
   );

@@ -1,0 +1,170 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 0 5%;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .nav-logo {
+    width: 65px;
+    border-radius: 50%;
+    height: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: #444;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: 0.3s;
+
+      &:hover,
+      &.active {
+        color: #0b6b64;
+      }
+    }
+  }
+
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    a {
+      color: #0b6b64;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .active {
+      color: #f59e0b;
+    }
+  }
+
+  .menu-btn {
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #0b6b64;
+    font-size: 1.7rem;
+  }
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 992px) {
+  .navbar {
+    .logo {
+      font-size: 1.8rem;
+    }
+
+    .nav-links {
+      gap: 20px;
+    }
+  }
+}
+
+/* =========================
+   Mobile Menu
+========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 75px;
+
+    .menu-btn {
+      display: block;
+    }
+
+    .nav-links {
+      position: fixed;
+      top: 75px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 75px);
+
+      background: #fff;
+
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      padding-top: 40px;
+      gap: 30px;
+
+      transition: 0.4s ease;
+
+      &.active {
+        left: 0;
+      }
+
+      li {
+        width: 100%;
+        text-align: center;
+      }
+
+      a {
+        font-size: 1.2rem;
+      }
+    }
+
+    .nav-icons {
+      margin-left: auto;
+      margin-right: 20px;
+
+      a {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 15px;
+    height: 60px;
+
+    .logo {
+      font-size: 1.5rem;
+    }
+
+    .nav-logo {
+      width: 50px;
+      border-radius: 50%;
+      height: auto;
+    }
+
+    .nav-icons {
+      gap: 12px;
+
+      a {
+        font-size: 1.3rem;
+      }
+    }
+
+    .menu-btn {
+      font-size: 1.5rem;
+    }
+  }
+}
