@@ -1,7 +1,7 @@
-import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import Confetti from "react-confetti";
-import jsPDF from "jspdf";
+import React from "react"
+import { useLocation, useNavigate } from "react-router-dom"
+import Confetti from "react-confetti"
+import jsPDF from "jspdf"
 import "./Sucess.css";
 
 const Success = () => {
