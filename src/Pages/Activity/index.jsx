@@ -5,176 +5,110 @@ import axios from "axios";
 const Activity = () => {
   const [activities, setActivities] = useState([]);
   const [loading, setLoading] = useState(true);
-
   const [activityDate, setActivityDate] = useState("");
   const [guests, setGuests] = useState(1);
-
   const [currentPage, setCurrentPage] = useState(1);
-  const user_id = localStorage.getItem("user_id")
-
+  const user_id = localStorage.getItem("user_id");
   const cardsPerPage = 6;
 
   useEffect(() => {
     axios
       .get("http://localhost:3000/activities")
-      .then((response) => {
-        setActivities(response.data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error(error);
-        setLoading(false);
-      });
+      .then((res) => { setActivities(res.data); setLoading(false); })
+      .catch((err) => { console.error(err); setLoading(false); });
   }, []);
 
   const handleBooking = (activity) => {
-    if (!activityDate) {
-      alert("Please Select Activity Date");
-      return;
-    }
-
-    const bookingData = {
-      user_id: user_id,
-      activityId: activity.id,
-      activityName: activity.name,
-      date: activityDate,
-      guests
-    };
-
+    if (!activityDate) { alert("Please select an activity date"); return; }
     axios
-      .post("http://localhost:3000/activities_carts", bookingData)
-      .then(() => {
-        alert("Activity Booked Successfully!");
-        setActivityDate("");
-        setGuests(1);
+      .post("http://localhost:3000/activity_carts", {
+        user_id, activityId: activity.id, activityName: activity.name, date: activityDate, guests,
       })
-      .catch((error) => {
-        console.error(error);
-      });
+      .then(() => { alert("Activity booked successfully!"); setActivityDate(""); setGuests(1); })
+      .catch(console.error);
   };
 
   const lastCard = currentPage * cardsPerPage;
   const firstCard = lastCard - cardsPerPage;
-
   const currentActivities = activities.slice(firstCard, lastCard);
-
   const totalPages = Math.ceil(activities.length / cardsPerPage);
 
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
+  if (loading) return <h2 style={{ textAlign: "center", padding: "80px" }}>Loading...</h2>;
 
   return (
     <div className="activity-page">
 
       <div className="hero-section">
         <div className="overlay"></div>
-
         <div className="hero-content">
-          <h1>Unforgettable Experiences</h1>
-          <button>Explore Collections</button>
+          <h1>Luxury isn't just where you stay — it's what you experience.</h1>
+          <button>Begin Your Journey</button>
         </div>
       </div>
 
       <div className="activity-container">
-
         <h2>Signature Adventures</h2>
 
         <div className="activity-grid">
-
           {currentActivities.map((activity) => (
             <div className="activity-card" key={activity.id}>
 
-              <img
-                src={activity.main_image}
-                alt={activity.name}
-              />
+              <div className="card-image-wrap">
+                <img src={activity.main_image} alt={activity.name} />
+                <span className="price-pill">₹{activity.price} / person</span>
+                <span className="rating-pill">
+                  <span className="star">★</span> {activity.rating}
+                </span>
+              </div>
 
-              <div className="card-content">
-
+              <div className="card-body">
+                <div className="card-location">
+                  <i className="bi bi-geo-alt"></i>
+                  <span>{activity.location.join(", ")}</span>
+                </div>
                 <h3>{activity.name}</h3>
+                <p className="desc">{activity.description.substring(0, 90)}...</p>
+              </div>
 
-                <p className="price">
-                  ₹{activity.price} / Person
-                </p>
+              <div className="card-tags">
+                {activity.tags?.slice(0, 3).map((tag, i) => (
+                  <span className="tag" key={i}>{tag}</span>
+                ))}
+              </div>
 
-                <p className="location">
-                  📍 {activity.location.join(", ")}
-                </p>
+              <div className="card-divider"></div>
 
-                <p className="rating">
-                  ⭐ {activity.rating}
-                </p>
-
-                <p className="desc">
-                  {activity.description.substring(0, 90)}...
-                </p>
-
-                <label>Select Date</label>
-
-                <input
-                  type="date"
-                  value={activityDate}
-                  onChange={(e) =>
-                    setActivityDate(e.target.value)
-                  }
-                />
-
-                <label>Guests</label>
-
-                <select
-                  value={guests}
-                  onChange={(e) =>
-                    setGuests(e.target.value)
-                  }
-                >
-                  <option value="1">1 Guest</option>
-                  <option value="2">2 Guests</option>
-                  <option value="3">3 Guests</option>
-                  <option value="4">4 Guests</option>
-                </select>
-
-                <button
-                  className="book-btn"
-                  onClick={() =>
-                    handleBooking(activity)
-                  }
-                >
+              <div className="card-form">
+                <div className="field-row">
+                  <div className="field">
+                    <label>Activity date</label>
+                    <input type="date" value={activityDate} onChange={(e) => setActivityDate(e.target.value)} />
+                  </div>
+                  <div className="field">
+                    <label>Guests</label>
+                    <select value={guests} onChange={(e) => setGuests(e.target.value)}>
+                      <option value="1">1 Guest</option>
+                      <option value="2">2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                    </select>
+                  </div>
+                </div>
+                <button className="book-btn" onClick={() => handleBooking(activity)}>
+                  <i className="bi bi-stars"></i>
                   Book Experience
                 </button>
-
               </div>
+
             </div>
           ))}
-
         </div>
 
         <div className="pagination">
-
-          <button
-            disabled={currentPage === 1}
-            onClick={() =>
-              setCurrentPage(currentPage - 1)
-            }
-          >
-            Prev
-          </button>
-
-          <span>
-            Page {currentPage} of {totalPages}
-          </span>
-
-          <button
-            disabled={currentPage === totalPages}
-            onClick={() =>
-              setCurrentPage(currentPage + 1)
-            }
-          >
-            Next
-          </button>
-
+          <button disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}>Prev</button>
+          <span>Page {currentPage} of {totalPages}</span>
+          <button disabled={currentPage === totalPages} onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
         </div>
-
       </div>
 
     </div>

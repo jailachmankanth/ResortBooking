@@ -12,8 +12,7 @@ import EventHall from './Pages/eventHalls'
 import EventHallDetails from './Pages/eventHallDetails'
 import Profile from './Pages/Profile'
 import Activity from './Pages/Activity'
-import Profile from './Pages/Profile';
-import Cart from './Pages/Cart/Cart'
+import Cart from './Pages/Cart'
 import Edit from './Pages/Edit/Edit'
 import Success from './Pages/Sucess/Sucess'
 import Contact from './Pages/Contact'
@@ -54,6 +53,8 @@ const App = () => {
         <Route path='/eventhall/:id' element={
           <PrivateRoute>
             <EventHallDetails />
+            </PrivateRoute>
+        }/>
         <Route path='/activities' element={
           <PrivateRoute>
             <Activity />

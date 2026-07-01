@@ -4,14 +4,30 @@
   box-sizing: border-box;
 }
 
+$teal:        #009688;
+$teal-dark:   #00796b;
+$teal-light:  #e0f2f1;
+$gold:        #d4af37;
+$gold-dark:   #a07d10;
+$text-dark:   #111;
+$text-mid:    #444;
+$text-soft:   #777;
+$text-muted:  #aaa;
+$bg-page:     #f7f8fa;
+$bg-white:    #ffffff;
+$border:      #e4e8ec;
+$radius:      20px;
+$shadow:      0 4px 20px rgba(0, 0, 0, 0.07);
+$shadow-hover: 0 16px 44px rgba(0, 0, 0, 0.13);
+
 .activity-page {
-  background: #f7f8fa;
+  background: $bg-page;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* HERO */
-
+// ── HERO ─────────────────────────────────────────────────────
 .hero-section {
-  height: 80vh;
+  height: 88vh;
   background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
   background-size: cover;
   background-position: center;
@@ -21,7 +37,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.45);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.62) 100%);
 }
 
 .hero-content {
@@ -32,156 +48,483 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: #fff;
+  padding: 0 40px;
+
+  h1 {
+    font-size: clamp(26px, 4.2vw, 60px);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    max-width: 880px;
+    margin-bottom: 34px;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.4);
+  }
+
+  button {
+    padding: 15px 42px;
+    border: 2px solid $gold;
+    border-radius: 50px;
+    background: transparent;
+    color: $gold;
+    font-size: clamp(12px, 1.3vw, 16px);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $gold;
+      color: #111;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(212,175,55,0.4);
+    }
+  }
 }
 
-.hero-content h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
-}
-
-.hero-content button {
-  padding: 14px 30px;
-  border: none;
-  border-radius: 30px;
-  background: #009688;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* CONTENT */
-
+// ── CONTAINER ─────────────────────────────────────────────────
 .activity-container {
   width: 92%;
-  margin: 50px auto;
+  max-width: 1400px;
+  margin: 70px auto 80px;
+
+  h2 {
+    font-size: clamp(22px, 2.8vw, 38px);
+    font-family: 'Playfair Display', serif;
+    color: $text-dark;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
 }
 
-.activity-container h2 {
-  margin-bottom: 30px;
-  font-size: 36px;
-}
-
+// ── GRID ─────────────────────────────────────────────────────
 .activity-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 36px;
 }
 
+// ── CARD ─────────────────────────────────────────────────────
 .activity-card {
-  background: white;
-  border-radius: 18px;
+  background: $bg-white;
+  border-radius: $radius;
   overflow: hidden;
-  box-shadow: 0 5px 18px rgba(0,0,0,.08);
-  transition: .3s;
+  border: 1px solid $border;
+  box-shadow: $shadow;
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: $shadow-hover;
+    border-color: rgba($gold, 0.35);
+  }
+
+  // ── Image area ──
+  .card-image-wrap {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.52) 0%, transparent 55%);
+    }
+  }
+
+  &:hover .card-image-wrap img {
+    transform: scale(1.06);
+  }
+
+  // ── Price pill on image ──
+  .price-pill {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    z-index: 2;
+    background: rgba($gold, 0.93);
+    color: #1a1200;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  // ── Rating pill on image ──
+  .rating-pill {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 2;
+    background: rgba(255,255,255,0.93);
+    color: $text-dark;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .star { color: #f59e0b; font-size: 13px; }
+  }
 }
 
-.activity-card:hover {
-  transform: translateY(-8px);
+// ── CARD BODY ─────────────────────────────────────────────────
+.card-body {
+  padding: 18px 18px 0;
+  flex: 1;
+
+  .card-location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+
+    i { font-size: 13px; color: $text-muted; }
+
+    span {
+      font-size: 12px;
+      color: $text-muted;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(15px, 1.5vw, 20px);
+    font-weight: 700;
+    color: $text-dark;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .desc {
+    font-size: clamp(11px, 1vw, 13px);
+    color: $text-soft;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
 }
 
-.activity-card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
+// ── TAGS ─────────────────────────────────────────────────────
+.card-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 0 18px 14px;
+
+  .tag {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 11px;
+    border-radius: 20px;
+    border: 1px solid $border;
+    color: $text-soft;
+    background: #f7f8fa;
+    transition: all 0.2s;
+
+    &:hover {
+      border-color: $teal;
+      color: $teal;
+      background: $teal-light;
+    }
+  }
 }
 
-.card-content {
-  padding: 20px;
+// ── DIVIDER ───────────────────────────────────────────────────
+.card-divider {
+  height: 1px;
+  background: $border;
+  margin: 0 18px;
 }
 
-.card-content h3 {
-  font-size: 24px;
+// ── FORM AREA ────────────────────────────────────────────────
+.card-form {
+  padding: 16px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .field-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+
+    label {
+      font-size: 10px;
+      font-weight: 600;
+      color: $text-muted;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    input,
+    select {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(11px, 1vw, 13px);
+      padding: 9px 11px;
+      border: 1.5px solid $border;
+      border-radius: 8px;
+      background: #fafafa;
+      color: $text-dark;
+      width: 100%;
+      transition: border-color 0.2s;
+      appearance: none;
+
+      &:focus {
+        outline: none;
+        border-color: $teal;
+        background: $bg-white;
+      }
+    }
+  }
 }
 
-.price {
-  color: #009688;
-  font-weight: 700;
-  margin: 10px 0;
-}
-
-.location,
-.rating {
-  color: #666;
-  margin-bottom: 8px;
-}
-
-.desc {
-  color: #555;
-  line-height: 1.5;
-  margin: 15px 0;
-}
-
-.card-content label {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 6px;
-}
-
-.card-content input,
-.card-content select {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
+// ── BOOK BUTTON ───────────────────────────────────────────────
 .book-btn {
   width: 100%;
-  margin-top: 15px;
-  padding: 14px;
+  padding: clamp(11px, 1.2vw, 14px);
   border: none;
-  border-radius: 8px;
-  background: #009688;
+  border-radius: 10px;
+  background: $teal;
   color: white;
   cursor: pointer;
-  font-size: 16px;
+  font-size: clamp(12px, 1.1vw, 14px);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+
+  i { font-size: 16px; }
+
+  &:hover {
+    background: $teal-dark;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0,150,136,0.32);
+  }
 }
 
+// ── PAGINATION ────────────────────────────────────────────────
 .pagination {
-  margin-top: 40px;
+  margin-top: 56px;
   display: flex;
   justify-content: center;
-  gap: 20px;
   align-items: center;
-}
+  gap: 16px;
+  flex-wrap: wrap;
 
-.pagination button {
-  padding: 10px 20px;
-  border: none;
-  background: #009688;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.pagination button:disabled {
-  background: gray;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:992px){
-
-  .activity-grid{
-    grid-template-columns: repeat(2,1fr);
+  span {
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: $text-mid;
+    font-weight: 500;
   }
 
-  .hero-content h1{
-    font-size:40px;
-  }
+  button {
+    padding: clamp(9px, 1vw, 12px) clamp(18px, 2vw, 28px);
+    border: none;
+    background: $teal;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: clamp(12px, 1.1vw, 14px);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease;
 
+    &:hover:not(:disabled) {
+      background: $teal-dark;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,150,136,0.3);
+    }
+
+    &:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+  }
 }
 
-@media(max-width:768px){
+// ════════════════════════════════════════════════════════════
+// RESPONSIVE
+// ════════════════════════════════════════════════════════════
 
-  .activity-grid{
-    grid-template-columns:1fr;
+@media (max-width: 1280px) {
+  .activity-grid { grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .activity-card .card-image-wrap { height: 200px; }
+}
+
+@media (max-width: 1024px) {
+  .hero-section { height: 75vh; }
+  .hero-content { padding: 0 30px; }
+  .activity-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .activity-card .card-image-wrap { height: 210px; }
+  .activity-container { margin: 55px auto 65px; }
+}
+
+@media (max-width: 768px) {
+  .hero-section { height: 65vh; }
+
+  .hero-content {
+    padding: 0 22px;
+    button { padding: 12px 30px; font-size: 12px; }
   }
 
-  .hero-content h1{
-    font-size:30px;
-    text-align:center;
+  .activity-container { width: 94%; margin: 44px auto 55px; }
+  .activity-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .activity-card .card-image-wrap { height: 185px; }
+
+  .card-body {
+    padding: 14px 14px 0;
+    .desc { font-size: 12px; }
   }
 
+  .card-tags { padding: 0 14px 12px; }
+  .card-divider { margin: 0 14px; }
+
+  .card-form {
+    padding: 14px 14px 16px;
+    .field-row { flex-direction: column; gap: 8px; }
+  }
+
+  .pagination { margin-top: 36px; gap: 12px; }
+}
+
+@media (max-width: 600px) {
+  .hero-section { height: 58vh; }
+
+  .hero-content {
+    padding: 0 18px;
+    button { padding: 11px 26px; font-size: 11px; letter-spacing: 1px; }
+  }
+
+  .activity-container { width: 94%; margin: 36px auto 48px; }
+  .activity-grid { grid-template-columns: 1fr; gap: 20px; }
+
+  .activity-card .card-image-wrap { height: 220px; }
+
+  .card-body {
+    padding: 16px 16px 0;
+    h3 { font-size: 17px; }
+  }
+
+  .card-tags { padding: 0 16px 12px; }
+  .card-divider { margin: 0 16px; }
+
+  .card-form {
+    padding: 14px 16px 18px;
+    .field-row { flex-direction: row; }
+  }
+
+  .book-btn { font-size: 13px; padding: 13px; }
+
+  .pagination {
+    margin-top: 30px;
+    button { padding: 10px 20px; font-size: 12px; }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section { height: 54vh; }
+
+  .hero-content {
+    padding: 0 16px;
+    button { padding: 10px 22px; font-size: 10px; }
+  }
+
+  .activity-card .card-image-wrap { height: 200px; }
+
+  .price-pill { font-size: 11px; padding: 4px 11px; }
+  .rating-pill { font-size: 11px; padding: 3px 9px; }
+
+  .card-body {
+    padding: 14px 14px 0;
+    h3 { font-size: 16px; }
+    .desc { font-size: 11.5px; }
+  }
+
+  .card-tags {
+    padding: 0 14px 10px;
+    .tag { font-size: 10px; padding: 3px 9px; }
+  }
+
+  .card-divider { margin: 0 14px; }
+
+  .card-form {
+    padding: 12px 14px 16px;
+    gap: 10px;
+
+    .field {
+      label { font-size: 9px; }
+
+      input, select {
+        font-size: 12px;
+        padding: 8px 10px;
+        border-radius: 7px;
+      }
+    }
+  }
+
+  .book-btn {
+    font-size: 12px;
+    padding: 11px;
+    border-radius: 8px;
+    i { font-size: 14px; }
+  }
+
+  .pagination {
+    gap: 8px;
+    span { font-size: 11px; }
+    button { padding: 9px 16px; font-size: 11px; border-radius: 8px; }
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-section { height: 50vh; }
+
+  .hero-content {
+    padding: 0 14px;
+    button { padding: 9px 18px; font-size: 9px; }
+  }
+
+  .activity-card .card-image-wrap { height: 180px; }
+
+  .card-body h3 { font-size: 15px; }
+  .price-pill, .rating-pill { font-size: 10px; }
+
+  .card-form .field input,
+  .card-form .field select { font-size: 11px; padding: 7px 9px; }
+
+  .book-btn { font-size: 11px; padding: 10px; }
+
+  .pagination button { padding: 8px 13px; font-size: 10px; }
 }
