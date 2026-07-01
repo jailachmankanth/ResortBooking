@@ -256,7 +256,7 @@ function Resorts() {
                                                     <small>STARTING FROM</small>
                                                     <h3>
                                                         ₹{item.price}
-                                                        <span>/ night</span>
+                                                        <span>/ day</span>
                                                     </h3>
                                                 </div>
 

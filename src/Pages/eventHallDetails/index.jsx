@@ -38,7 +38,7 @@ const ResortDetails = () => {
 
     const cartData = {
       user_id: userId,
-      eventHall_id: resort.id,
+      eventhall_id: resort.id,
       check_in: checkIn,
       check_out: checkOut,
       guests: guests,

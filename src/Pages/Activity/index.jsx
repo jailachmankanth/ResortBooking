@@ -18,6 +18,10 @@ const Activity = () => {
       .catch((err) => { console.error(err); setLoading(false); });
   }, []);
 
+  useEffect(()=>{
+    console.log(activities); 
+  }, [activities])
+
   const handleBooking = (activity) => {
     if (!activityDate) { alert("Please select an activity date"); return; }
     axios

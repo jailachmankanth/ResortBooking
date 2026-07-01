@@ -1,7 +1,6 @@
 import React from "react";
 import "./BookingSummary.css";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 const BookingSummary = ({ items = [] }) => {
   const navigate = useNavigate();

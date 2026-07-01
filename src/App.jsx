@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {LandingRoute, PrivateRoute} from './Authentication/PrivateRoute'
-import Navbar from './uiLayouts/Navbar/Navbar'
+import Navbar from './uiLayouts/Navbar'
 import Landing from './Pages/Landing/Index'
 import Signup from './Pages/signup'
 import Login from './Pages/login'
@@ -13,12 +13,12 @@ import EventHallDetails from './Pages/eventHallDetails'
 import Profile from './Pages/Profile'
 import Activity from './Pages/Activity'
 import Cart from './Pages/Cart'
-import Edit from './Pages/Edit/Edit'
-import Success from './Pages/Sucess/Sucess'
+import Edit from './Pages/Edit'
+import Success from './Pages/Sucess'
 import Contact from './Pages/Contact'
-import Footer from './uiLayouts/Footer/Footer'
+import Footer from './uiLayouts/Footer'
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
     <Navbar/>
@@ -53,7 +53,7 @@ const App = () => {
         <Route path='/eventhall/:id' element={
           <PrivateRoute>
             <EventHallDetails />
-            </PrivateRoute>
+          </PrivateRoute>
         }/>
         <Route path='/activities' element={
           <PrivateRoute>
