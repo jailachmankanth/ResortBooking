@@ -1,24 +1,9 @@
 {
   "profiles": [
     {
-      "user_name": "Dinesh Ezhilarasan",
-      "user_mail": "dhineshknk@gmail.com",
-      "id": "eexL3m5k37o"
-    },
-    {
-      "user_name": "Dinesh E",
-      "user_mail": "mintifizo@gmail.com",
-      "id": "R_2pI_kgRDQ"
-    },
-    {
       "user_name": "jai",
       "user_mail": "jai@gmail.com",
-      "id": "4LhTm6peRgI"
-    },
-    {
-      "user_name": "Bhava",
-      "user_mail": "abc@gmail.com",
-      "id": "r_yC0Iz-5Lk"
+      "id": "2yV-SkTLgE8"
     }
   ],
   "resorts": [
@@ -671,6 +656,13 @@
       "check_in": "2026-07-01",
       "check_out": "2026-07-17",
       "id": "q71w83pLdYc"
+    },
+    {
+      "user_id": "2yV-SkTLgE8",
+      "resort_id": "r6",
+      "check_in": "2026-07-02",
+      "check_out": "2026-07-03",
+      "id": "r7ciIbLtq0s"
     }
   ],
   "activity_bookings": [
@@ -687,6 +679,12 @@
       "date": "2026-07-10",
       "guests": "3",
       "id": "7h6VGbQWbGk"
+    },
+    {
+      "user_id": "2yV-SkTLgE8",
+      "date": "2026-07-02",
+      "guests": "2",
+      "id": "1pS1cCddD6g"
     }
   ],
   "eventhall_bookings": [
@@ -705,6 +703,13 @@
       "check_out": "2026-06-02",
       "guests": "500",
       "id": "qxo38UrQd4E"
+    },
+    {
+      "user_id": "2yV-SkTLgE8",
+      "check_in": "2026-07-03",
+      "check_out": "2026-07-04",
+      "guests": "2000",
+      "id": "p1ONdQlmdD0"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

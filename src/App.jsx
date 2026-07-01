@@ -53,7 +53,7 @@ function App() {
         <Route path='/eventhall/:id' element={
           <PrivateRoute>
             <EventHallDetails />
-        </PrivateRoute>
+          </PrivateRoute>
         }/>
         <Route path='/activities' element={
           <PrivateRoute>
