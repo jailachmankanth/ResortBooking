@@ -111,7 +111,7 @@ const Profile = () => {
   }
 
   const confirmRemove = async () => {
-    const endpointMap = { resort: 'resort_bookings', activity: 'activities_booking', eventhall: 'eventhall_booking' }
+    const endpointMap = { resort: 'resort_bookings', activity: 'activity_bookings', eventhall: 'eventhall_bookings' }
     try {
       await axios.delete(`${BASE_URL}/${endpointMap[pendingRemove.type]}/${pendingRemove.id}`)
       if (pendingRemove.type === 'resort') setBookedResorts(prev => prev.filter(b => b.id !== pendingRemove.id))

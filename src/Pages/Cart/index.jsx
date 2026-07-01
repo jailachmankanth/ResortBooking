@@ -149,7 +149,7 @@ const Cart = () => {
         ...activityCart.map(item =>
           axios.post(`${BASE_URL}/activity_bookings`, {
             user_id: userId,
-            activity_id: item.activity_id,
+            activity_id: item.activityId,
             date: item.date,
             guests: item.guests
           })

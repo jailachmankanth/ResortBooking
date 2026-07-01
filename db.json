@@ -662,7 +662,8 @@
       "resort_id": "r6",
       "check_in": "2026-07-02",
       "check_out": "2026-07-03",
-      "id": "r7ciIbLtq0s"
+      "guests": "3",
+      "id": "RB6Ky1AQ75c"
     }
   ],
   "activity_bookings": [
@@ -682,9 +683,10 @@
     },
     {
       "user_id": "2yV-SkTLgE8",
+      "activity_id": "a2",
       "date": "2026-07-02",
-      "guests": "2",
-      "id": "1pS1cCddD6g"
+      "guests": 1,
+      "id": "IcuJy1SE1xs"
     }
   ],
   "eventhall_bookings": [
@@ -706,10 +708,11 @@
     },
     {
       "user_id": "2yV-SkTLgE8",
+      "eventhall_id": "e4",
       "check_in": "2026-07-03",
       "check_out": "2026-07-04",
-      "guests": "2000",
-      "id": "p1ONdQlmdD0"
+      "guests": "12345",
+      "id": "MR-BpDQje5o"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
